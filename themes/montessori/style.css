@@ -653,6 +653,35 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
+.content-front-page {
+  width: 480px; }
+  .content-front-page .main-picture {
+    height: 100vh;
+    background: url("../../images/header-pic2.pdf") no-repeat center, linear-gradient(rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%);
+    width: 480px;
+    height: 211px; }
+  .content-front-page .welcome-text {
+    background-color: linear-gradient(rgba(0, 0, 0, 0.74)); }
+  .content-front-page .myButton {
+    box-shadow: inset 0px 39px 0px -24px #e67a73;
+    background-color: #e4685d;
+    border-radius: 4px;
+    border: 1px solid #ffffff;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 15px;
+    padding: 6px 15px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #b23e35; }
+  .content-front-page .myButton:hover {
+    background-color: #eb675e; }
+  .content-front-page .myButton:active {
+    position: relative;
+    top: 1px; }
+
+/*Footer*/
 .footer-container {
   background-color: #125A50;
   width: 480px;
