@@ -7,15 +7,47 @@
  width: 480px;
 
  .main-picture {
-	height: 100vh;
-	background: url("../../images/header-pic2.pdf") no-repeat center, linear-gradient( rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%);
+	background: url("../../images/header-pic2.jpg")  100%, linear-gradient( rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) );
 	width:480px;
     height: 211px;
-}
+    background-size: 100% auto;
+ }
 .welcome-text{
-    background-color: linear-gradient(rgba(0,0,0,0.74));
-}
+width: 481px;
+height: 355px;
+background-color: rgba(0,0,0,0.74);
+color:white;
 
+}
+.welcome{
+width: 466.66px;
+height: 42px;
+font-family: Asap;
+font-size: 36px;
+line-height: 42px;
+color: #FFFFFF; 
+padding-top:5%;
+margin-top:0px;
+}
+.border{
+box-sizing: border-box;
+width: 119.23px;
+height: 4px;
+border: 3px solid #FFFFFF;
+margin-top:7%;
+}
+.myButton{
+    margin-left:30%;
+}
+.support{
+    width: 449.57px;
+height: 160px;
+font-family: "Noto Sans";
+font-size: 20px;
+line-height: 40px;
+color: #FFFFFF;
+margin-left:20px;
+}
 .myButton {
 	-moz-box-shadow:inset 0px 39px 0px -24px #e67a73;
 	-webkit-box-shadow:inset 0px 39px 0px -24px #e67a73;
@@ -24,7 +56,6 @@
 	-moz-border-radius:4px;
 	-webkit-border-radius:4px;
 	border-radius:4px;
-	border:1px solid #ffffff;
 	display:inline-block;
 	cursor:pointer;
 	color:#ffffff;
