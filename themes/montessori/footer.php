@@ -34,6 +34,7 @@
 		</div><!-- #page -->
 
 		<?php wp_footer(); ?>
+		<?php get_footer();?>
 </div><!--footer-container-->
 	</body>
 </html>
