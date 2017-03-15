@@ -1,2 +1,3 @@
-	<?php get_footer(); ?>
+
     <p>hola</p>
+    	<?php get_footer(); ?>

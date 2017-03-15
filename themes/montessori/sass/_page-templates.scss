@@ -3,6 +3,43 @@
 --------------------------------------------------------------*/
 
 /* Front page */
-body{
-    background-color:  purple;
+.footer-container{
+    background-color:#125A50 ;
+    width:480px;
+    height: auto;
+.footer-menu{
+    p,a, li,ul {
+        text-decoration: none;
+        color:white;
+        font-size:18px;
+        list-style: none;
+        display: inline-block;
+        padding-left: 10px;
+        padding-right: 9px;
 }
+}
+.address-info,a{
+    color:white;
+    font-size:16px;
+}
+.email{
+    text-align: end;
+    margin-right: 10%;
+}
+.copyright{
+    color:white;
+    font-size:16px;
+    text-align: center;
+    p{
+    margin-bottom: 0px;
+    padding-bottom: 30px;
+}
+}
+.address-info{
+    p{
+        display:none;
+    }
+}
+
+}
+

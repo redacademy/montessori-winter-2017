@@ -309,9 +309,6 @@ hr {
   height: 1px;
   margin-bottom: 1.5rem; }
 
-ul, ol {
-  margin: 0 0 1.5rem 3rem; }
-
 ul {
   list-style: disc; }
 
@@ -656,5 +653,30 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
-body {
-  background-color: pink; }
+.footer-container {
+  background-color: #125A50;
+  width: 480px;
+  height: auto; }
+  .footer-container .footer-menu p, .footer-container .footer-menu a, .footer-container .footer-menu li, .footer-container .footer-menu ul {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    list-style: none;
+    display: inline-block;
+    padding-left: 10px;
+    padding-right: 9px; }
+  .footer-container .address-info, .footer-container a {
+    color: white;
+    font-size: 16px; }
+  .footer-container .email {
+    text-align: end;
+    margin-right: 10%; }
+  .footer-container .copyright {
+    color: white;
+    font-size: 16px;
+    text-align: center; }
+    .footer-container .copyright p {
+      margin-bottom: 0px;
+      padding-bottom: 30px; }
+  .footer-container .address-info p {
+    display: none; }
