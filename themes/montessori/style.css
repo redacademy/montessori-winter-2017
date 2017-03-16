@@ -404,11 +404,10 @@ textarea {
   height: 150px; }
 
 .site-branding h1 {
-  background: url(../../gjjf.jpg) no-repeat;
-  background-size: 50px 33px;
-  height: 33px;
+  background: url(../../images/logo/montessori-logo.svg) no-repeat;
+  background-size: 300px 100px;
+  height: 100px;
   margin: 0;
-  overflow: hidden;
   text-indent: 100%;
   white-space: nowrap; }
 
@@ -416,24 +415,31 @@ textarea {
   max-width: 480px;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-direction: column;
-      flex-direction: column;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-pack: end;
+      justify-content: flex-end;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap; }
 
-.menu-main-navbar-container {
+.main-navigation ul {
+  height: 100vh;
+  width: 485px;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-direction: column;
-      flex-direction: column; }
-
-ul.main-navigation {
-  display: -ms-flexbox;
-  display: flex;
+  background: white;
   -ms-flex-direction: column;
       flex-direction: column;
   -ms-flex-line-pack: end;
-      align-content: flex-end; }
+      align-content: flex-end;
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  transition: 500ms ease;
+  padding: 2rem; }
+  .main-navigation ul.active {
+    visibility: visible;
+    opacity: 1; }
 
 .main-navigation a {
   text-transform: uppercase;
@@ -445,6 +451,26 @@ ul.main-navigation {
   text-transform: uppercase;
   list-style: none;
   color: #000; }
+
+button.menu-toggle {
+  position: relative;
+  display: block;
+  width: 50px;
+  height: 50px;
+  z-index: 2;
+  color: transparent; }
+
+.menu-toggle:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.8em;
+  width: 100%;
+  height: 0.37em;
+  background: grey;
+  border-radius: 5px;
+  box-shadow: 0 1em 0 0 grey, 0 2em 0 0 grey;
+  border: none; }
 
 /*--------------------------------------------------------------
 # Navigation
@@ -468,7 +494,6 @@ a {
   float: left;
   width: 100%; }
   .main-navigation ul {
-    display: none;
     list-style: none;
     margin: 0;
     padding-left: 0; }
@@ -504,9 +529,7 @@ a {
 
 @media screen and (min-width: 768px) {
   .menu-toggle {
-    display: none; }
-  .main-navigation ul {
-    display: block; } }
+    display: none; } }
 
 .site-main .comment-navigation, .site-main
 .posts-navigation, .site-main

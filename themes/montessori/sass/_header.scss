@@ -3,11 +3,10 @@
 }
 
 .site-branding h1 {
-    background: url(../../gjjf.jpg) no-repeat;
-    background-size: 50px 33px;
-    height: 33px;
+    background: url(../../images/logo/montessori-logo.svg) no-repeat;
+    background-size: 300px 100px;
+    height: 100px;
     margin: 0;
-    overflow: hidden;
     text-indent: 100%;
     white-space: nowrap;
 }
@@ -15,21 +14,28 @@
 .main-navigation {
     max-width: 480px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: flex-end;
     flex-wrap: nowrap;
 }
 
-.menu-main-navbar-container {
+.main-navigation ul {
+    height: 100vh;
+    width: 485px;
     display: flex;
-    flex-direction: column;
-}
-
-
-ul.main-navigation {
-    display: flex;
+    background: white;
     flex-direction: column;
     align-content: flex-end;
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    transition: 500ms ease;
+    padding: 2rem;
 
+    &.active {
+        visibility: visible;
+        opacity: 1;
+    }
 }
 
 .main-navigation a {
@@ -43,4 +49,28 @@ ul.main-navigation {
     text-transform: uppercase;
     list-style: none;
     color:#000;
+}
+
+button.menu-toggle {
+    position: relative;
+    display: block;
+    width: 50px;
+    height: 50px;
+    z-index: 2;
+    color: transparent;
+}
+
+.menu-toggle:before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.8em;
+    width: 100%;
+    height: 0.37em;
+    background: grey;
+    border-radius: 5px;
+    box-shadow: 
+    0 1em 0 0 grey,
+    0 2em 0 0 grey;
+    border: none;
 }
