@@ -750,7 +750,7 @@ object {
     border: 3px solid #FFFFFF;
     margin-top: 7%; }
   .content-front-page .myButton {
-    margin-left: 30%; }
+    margin-left: 34%; }
   .content-front-page .support {
     width: 449.57px;
     height: 160px;
@@ -760,8 +760,7 @@ object {
     color: #FFFFFF;
     margin-left: 20px; }
   .content-front-page .myButton {
-    box-shadow: inset 0px 39px 0px -24px #e67a73;
-    background-color: #e4685d;
+    background-color: #eb675e;
     border-radius: 4px;
     display: inline-block;
     cursor: pointer;
@@ -769,27 +768,154 @@ object {
     font-family: Arial;
     font-size: 15px;
     padding: 6px 15px;
-    text-decoration: none;
-    text-shadow: 0px 1px 0px #b23e35; }
+    text-decoration: none; }
   .content-front-page .myButton:hover {
     background-color: #eb675e; }
   .content-front-page .myButton:active {
     position: relative;
     top: 1px; }
   .content-front-page .quick-links {
+    margin-left: 5%;
+    font-size: 30px;
+    font-weight: lighter; }
+    .content-front-page .quick-links h2 {
+      margin-top: 12%;
+      margin-bottom: 12%; }
+  .content-front-page .benefits-of {
+    width: 449.57px;
+    font-family: "Noto Sans";
+    font-size: 20px;
+    line-height: 40px;
+    color: #FFFFFF;
+    margin-left: 20px; }
+    .content-front-page .benefits-of ul, .content-front-page .benefits-of li {
+      width: 377px;
+      padding-left: 0px;
+      font-family: "Noto Sans";
+      font-size: 25px;
+      line-height: 40px;
+      color: #000000; }
+  .content-front-page .benefits-button {
+    background-color: #4FC8A1;
+    border-radius: 6px;
+    margin-left: 10%;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 27px;
+    font-weight: bold;
+    padding: 10px 15px;
+    text-decoration: none;
+    width: 320px;
+    height: 67px;
+    font-family: "Noto Sans";
     text-align: center; }
+  .content-front-page .benefits-button:hover {
+    background-color: #eb675e; }
+  .content-front-page .benefits-button:active {
+    position: relative;
+    top: 1px; }
   .content-front-page .we-need {
     text-align: center; }
-
-.pie-graph {
-  background: url("../../images/pie-graph.jpg") 100%, linear-gradient(rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5));
-  width: 287px;
-  height: 468px;
-  background-size: 100% auto;
-  margin-left: 17%; }
-
-.featured {
-  text-align: center; }
+  .content-front-page .nw-program {
+    width: 449.57px;
+    font-family: "Noto Sans";
+    font-size: 20px;
+    line-height: 40px;
+    color: #FFFFFF;
+    margin-left: 20px; }
+    .content-front-page .nw-program p {
+      font-family: "Noto Sans";
+      font-size: 25px;
+      color: #000000;
+      margin-top: 10%;
+      margin-bottom: 10%; }
+    .content-front-page .nw-program .parra {
+      margin-bottom: 10%;
+      margin-bottom: 10%;
+      width: 377px; }
+  .content-front-page .nw-button {
+    background-color: #4FC8A1;
+    border-radius: 6px;
+    margin-left: 17%;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 10px 15px;
+    text-decoration: none;
+    width: 320px;
+    height: 67px;
+    font-family: "Noto Sans";
+    text-align: center; }
+  .content-front-page .nw-button:hover {
+    background-color: #eb675e; }
+  .content-front-page .nw-button:active {
+    position: relative;
+    top: 1px; }
+  .content-front-page .line {
+    box-sizing: border-box;
+    width: 410px;
+    height: 2px;
+    border: 2px solid #2EB688;
+    margin-left: 5%; }
+  .content-front-page .get-involved {
+    width: 449.57px;
+    height: auto;
+    font-family: "Noto Sans";
+    font-size: 25px;
+    line-height: 40px;
+    color: #FFFFFF;
+    margin-left: 20px; }
+    .content-front-page .get-involved p {
+      width: 377px;
+      font-family: "Noto Sans";
+      font-size: 25px;
+      line-height: 40px;
+      color: #000000; }
+  .content-front-page .get-button {
+    background-color: #eb675e;
+    border-radius: 6px;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 10px 15px;
+    text-decoration: none;
+    width: 320px;
+    height: 67px;
+    font-family: "Noto Sans";
+    text-align: center;
+    margin-left: 5%; }
+  .content-front-page .get-button:hover {
+    background-color: #eb675e; }
+  .content-front-page .get-button:active {
+    position: relative;
+    top: 1px; }
+  .content-front-page .we-need {
+    width: 377px;
+    margin-left: 20px;
+    font-family: "Noto Sans";
+    font-size: 25px;
+    line-height: 46px;
+    color: #000000; }
+    .content-front-page .we-need p {
+      width: 377px;
+      font-family: "Noto Sans";
+      font-size: 25px;
+      line-height: 46px;
+      color: #000000; }
+  .content-front-page .pie-graph {
+    background: url("../../images/pie-graph.jpg") 100%, linear-gradient(rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5));
+    width: 287px;
+    height: 468px;
+    background-size: 100% auto;
+    margin-left: 17%; }
+  .content-front-page .featured {
+    text-align: center; }
 
 /*Footer*/
 .footer-container {
