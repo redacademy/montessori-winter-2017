@@ -908,6 +908,12 @@ object {
       font-size: 25px;
       line-height: 46px;
       color: #000000; }
+    .content-front-page .we-need .quote-block .quote-line {
+      width: 6.34px;
+      height: 165px;
+      background-color: #D93B57; }
+    .content-front-page .we-need .quote-block .quote-voluntering {
+      width: 325px; }
   .content-front-page .pie-graph {
     background: url("../../images/pie-graph.jpg") 100%, linear-gradient(rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5));
     width: 287px;
