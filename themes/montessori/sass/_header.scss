@@ -43,13 +43,13 @@ div.home-link-logo {
     transition: 500ms ease;
     z-index: 1;
     right: 0;
-    top: 132px; 
+    top: 100px; 
 
     &.active {
         visibility: visible;
         opacity: 1;
         right: 0;
-        top: 132px; 
+        top: 100px; 
     }
 }
 
