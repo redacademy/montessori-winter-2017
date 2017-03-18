@@ -22,8 +22,9 @@ get_header(); ?>
                 <!--welcome-->
             </div>
             <!--hero-->
-            <section class="quick-links">
+           
                 <h2>Quick Links</h2>
+                 <section class="quick-links">
                 <div class="benefits-of">
                     <div> <a href="#" class="benefits-button">Benefits of Montessori</a></div>
                     <ul>
@@ -47,15 +48,18 @@ get_header(); ?>
                 </div>
             </section>
             <div class="line"></div>
-            <div>
+           
+                <h2>We Need Your Support</h2>
                 <section class="we-need">
-                    <h2>We Need Your Support</h2>
+                   
+                    <div class="dos">
+                     <div class="one">
                     <p>The New Westminster Montessori Society is a volonteer run registered charity committed to promoting and
                         developing Montessori education in the public school system. We have committed to the school Board
                         to provide all of the materials needed for all existing and new Montessori classrooms.</p>
                     <div class="quote-block" <div>
                         <div class="quote-line"></div>
-                    <div class="quote-voluntering">Volunteering and donations are essential in order for the Montessori program to continue to operate and
+                    <div class="quote-voluntering"><b>Volunteering and donations</b> are essential in order for the Montessori program to continue to operate and
                         provide the best education to all our children.</div>
             </div>
             <!--quote block-->
@@ -64,11 +68,32 @@ get_header(); ?>
             <p>This amount can be raised if all parents in the program donate $100 per child per year or $10 per month for 10
                 months. All donations are strictly voluntary, tax-deductible, and not mandatory.
             </p>
+            </div><!--one-->
             <div class="pie-graph"></div>
-
+            </div><!--dos-->
             </section>
+            <div class="we-need-buttons">
+              <a href="#" class="support-button">Support Now</a>
+              <a href="#" class="how-money-button">How $ is spent</a>
+              </div><!--we need buttons-->
+            
+           <div class="line2"></div>
             <section class="featured">
                 <h2>Featured News</h2>
+                <div class="featured-news">
+                    <div class="featured-one">
+                <?php echo CFS()->get('feature_news_text');?>
+                <a href="#" class="read-more">Read More</a>
+                </div> <!--featured-one-->
+                <div class="featured-two">
+                <?php echo CFS()->get('featured_news_text_two');?>
+                 <a href="#" class="read-more">Read More</a>
+                </div><!--featured-two-->
+                <div class="featured-three">
+                <?php echo CFS()->get('featured_news_text_three');?>
+                 <a href="#" class="read-more">Read More</a>
+                </div><!-- featured three-->
+                </div><!-- featured-news-->
             </section>
     </div>
     <?php while ( have_posts() ) : the_post(); ?>

@@ -4,20 +4,35 @@
 
 /* Front page */
 .content-front-page{
- width: 480px;
+ //width: 480px;
 
  .main-picture {
 	background: url("../../images/header-pic2.jpg")  100%, linear-gradient( rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) );
-	width:480px;
+	//width:480px;
     height: 211px;
     background-size: 100% auto;
  }
+
+@media (min-width: 1240px) {
+      .main-picture {
+      background-size: 100% auto;
+      height: 650px;
+       } 
+      }
+
 .welcome-text{
 width: 481px;
 height: 355px;
 background-color: rgba(0,0,0,0.74);
 color:white;
 
+}
+@media (min-width: 1240px) {
+      .welcome-text {
+      background-size: 100% auto;
+      height: 650px;
+      width:550px;
+       } 
 }
 .welcome{
 width: 466.66px;
@@ -29,6 +44,13 @@ color: #FFFFFF;
 padding-top:5%;
 margin-top:0px;
 }
+
+@media (min-width: 1240px) {
+      .welcome {
+     font-size: 55px;
+    padding-top: 10%;
+       } 
+}
 .border{
 box-sizing: border-box;
 width: 119.23px;
@@ -36,10 +58,15 @@ height: 4px;
 border: 3px solid #FFFFFF;
 margin-top:7%;
 }
-
+@media (min-width: 1240px) {
+      .border {
+     margin-top:14%;
+       } 
+}
 .myButton{
     margin-left:34%;
 }
+ 
 .support{
     width: 449.57px;
 height: 160px;
@@ -48,6 +75,11 @@ font-size: 20px;
 line-height: 40px;
 color: #FFFFFF;
 margin-left:20px;
+}
+@media (min-width: 1240px) {
+      .support {
+     font-size: 30px;
+       } 
 }
 .myButton {
 	background-color:#eb675e;
@@ -59,6 +91,14 @@ margin-left:20px;
 	font-size:15px;
 	padding:6px 15px;
 	text-decoration:none;
+}
+
+@media (min-width: 1240px) {
+      .myButton {
+   font-size:24px;
+    margin-top: 20%;
+   
+       } 
 }
 .myButton:hover {
 	background-color:#eb675e;
@@ -75,6 +115,14 @@ margin-left:20px;
         margin-top:12%;
         margin-bottom: 12%;
     }
+    
+
+}
+@media (min-width: 1240px) {
+      .quick-links, h2 {
+   display: flex;
+   font-size:50px;
+       } 
 }
 
 .benefits-of{
@@ -120,8 +168,7 @@ margin-left: 10%;
 .we-need{
     text-align: center;
 }
-
-
+ 
 
 
 
@@ -182,6 +229,12 @@ height: 2px;
 border: 2px solid #2EB688;  
 margin-left: 5%;
 }
+@media (min-width: 1240px) {
+      .line {
+   width: 1340px;
+   
+       } 
+}
 
 
 
@@ -241,18 +294,41 @@ font-family: "Noto Sans";
 font-size: 25px;
 line-height: 46px;
 color: #000000;
+text-align: left;
+margin-left: 5%;
 }
 .quote-block{
+    display:flex;
     .quote-line{
 width: 6.34px;
 height: 165px;
 background-color: #D93B57;
+margin-left: 4%;
+margin-top:7%;
     }
     .quote-voluntering{
      width:325px;
-
+     margin-left: 7%;
+     text-align: left;
     }
 }
+
+@media (min-width: 1240px) {
+      .one {
+  // width: 6.9%;
+   
+       } 
+}
+
+
+@media (min-width: 1240px) {
+      .dos {
+  display:flex;
+   
+       } 
+}
+
+
 }
 
 .pie-graph{
@@ -262,11 +338,137 @@ background-color: #D93B57;
     background-size: 100% auto; 
     margin-left: 17%;
 }
-.featured{
-    text-align: center;
+@media (min-width: 1240px) {
+      .pie-grap{
+  display:flex;
+   
+       } 
+}
+
+
+
+.we-need-buttons{
+    width: 450px;
+   padding-top:20%;
+.support-button{ 
+	background-color:#eb675e;
+	border-radius:6px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:30px;
+    font-weight: bold;
+	//padding:10px;
+	text-decoration:none;
+	width: 180px;
+   height: 57px;
+   font-family: "Noto Sans";
+    text-align: center; 
+    //margin-left:5%;
+}
+.support-button:hover {
+	background-color:#4FC8A1;
+}
+.support-button:active {
+	position:relative;
+	top:1px;
+}
+
+.how-money-button{
+	background-color:#4FC8A1;
+	border-radius:6px;
+margin-left: 3%;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:30px;
+    font-weight: bold;
+	padding:12px;
+	text-decoration:none;
+	width: 180px;
+   height: 67px;
+   font-family: "Noto Sans";
+    text-align: center; 
+}
+.how-money-button:hover {
+	background-color:#eb675e;
+}
+.how-money-button:active {
+	position:relative;
+	top:1px;
 }
 }
 
+.line2{
+  box-sizing: border-box;
+width: 410px;
+height: 2px;
+border: 2px solid #2EB688;  
+margin-left: 5%;
+margin-top:7%;
+}
+@media (min-width: 1240px) {
+      .line2 {
+   width: 1340px;
+   
+       } 
+}
+
+
+
+}
+
+
+.featured{
+    text-align: center;
+}
+.featured-news{
+    color:black;
+}
+@media (min-width: 1240px) {
+      .featured-news {
+   display:flex;
+   margin-left: 8%;
+   margin-bottom: 5%;
+       } 
+}
+
+
+.read-more{
+    text-decoration: none;
+    font-family: "Noto Sans";
+font-size: 20px;
+font-weight: bold;
+text-align: center;
+line-height: 27px;
+color: #248E6A;
+}
+
+
+.featured-one, .featured-two, .featured-three{
+    border-style: solid;
+border-color: #2EB688;
+border-width: thin;
+margin-top:5%;
+p{
+    font-family: 'novo', sans-serif;
+    font-size: 20px;
+    text-align: left;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+
+}
+
+@media (min-width: 1240px) {
+      .featured-one, .featured-two, .featured-three {
+margin-left:30px;
+margin-right: 30px;
+   width: 25%;
+       } 
+}
 
 
 

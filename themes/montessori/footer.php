@@ -18,7 +18,8 @@
 						<li>About</li>
 						<li>Contact us</li>
 						<li>Get Involved</li>
-						<li>Follow Us<i class="fa facebook-square" aria-hidden="true"></i></a></li>
+						</ul>
+						<p><a href="#">Follow Us<i class="fa fa facebook" aria-hidden="true"></i></a></p>
 						</div>
 						<div class="address-info">
 							<p>Suite 379, 104-1015 Columbia Street</p>
@@ -35,6 +36,7 @@
 
 		<?php wp_footer(); ?>
 		<?php get_footer();?>
+		<script src="../../js/jquery-3.1.1.min.js"></script>
 </div><!--footer-container-->
 	</body>
 </html>

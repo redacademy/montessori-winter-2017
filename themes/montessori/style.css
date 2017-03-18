@@ -477,7 +477,7 @@ button.menu-toggle {
   height: 0.37em;
   background: grey;
   border-radius: 5px;
-  box-shadow: 0 1em 0 0 grey, 0 2em 0 0 grey;
+  box-shadow: 0 1em 0 0 grey, 0 2em 0 0 grey;
   border: none; }
 
 /*--------------------------------------------------------------
@@ -730,206 +730,378 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
-.content-front-page {
-  width: 480px; }
+.content-front-page .main-picture {
+  background: url("../../images/header-pic2.jpg") 100%, linear-gradient(rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5));
+  height: 211px;
+  background-size: 100% auto; }
+
+@media (min-width: 1240px) {
   .content-front-page .main-picture {
-    background: url("../../images/header-pic2.jpg") 100%, linear-gradient(rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5));
-    width: 480px;
-    height: 211px;
-    background-size: 100% auto; }
+    background-size: 100% auto;
+    height: 650px; } }
+
+.content-front-page .welcome-text {
+  width: 481px;
+  height: 355px;
+  background-color: rgba(0, 0, 0, 0.74);
+  color: white; }
+
+@media (min-width: 1240px) {
   .content-front-page .welcome-text {
-    width: 481px;
-    height: 355px;
-    background-color: rgba(0, 0, 0, 0.74);
-    color: white; }
+    background-size: 100% auto;
+    height: 650px;
+    width: 550px; } }
+
+.content-front-page .welcome {
+  width: 466.66px;
+  height: 42px;
+  font-family: Asap;
+  font-size: 36px;
+  line-height: 42px;
+  color: #FFFFFF;
+  padding-top: 5%;
+  margin-top: 0px; }
+
+@media (min-width: 1240px) {
   .content-front-page .welcome {
-    width: 466.66px;
-    height: 42px;
-    font-family: Asap;
-    font-size: 36px;
-    line-height: 42px;
-    color: #FFFFFF;
-    padding-top: 5%;
-    margin-top: 0px; }
+    font-size: 55px;
+    padding-top: 10%; } }
+
+.content-front-page .border {
+  box-sizing: border-box;
+  width: 119.23px;
+  height: 4px;
+  border: 3px solid #FFFFFF;
+  margin-top: 7%; }
+
+@media (min-width: 1240px) {
   .content-front-page .border {
-    box-sizing: border-box;
-    width: 119.23px;
-    height: 4px;
-    border: 3px solid #FFFFFF;
-    margin-top: 7%; }
-  .content-front-page .myButton {
-    margin-left: 34%; }
+    margin-top: 14%; } }
+
+.content-front-page .myButton {
+  margin-left: 34%; }
+
+.content-front-page .support {
+  width: 449.57px;
+  height: 160px;
+  font-family: "Noto Sans";
+  font-size: 20px;
+  line-height: 40px;
+  color: #FFFFFF;
+  margin-left: 20px; }
+
+@media (min-width: 1240px) {
   .content-front-page .support {
-    width: 449.57px;
-    height: 160px;
-    font-family: "Noto Sans";
-    font-size: 20px;
-    line-height: 40px;
-    color: #FFFFFF;
-    margin-left: 20px; }
+    font-size: 30px; } }
+
+.content-front-page .myButton {
+  background-color: #eb675e;
+  border-radius: 4px;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 15px;
+  padding: 6px 15px;
+  text-decoration: none; }
+
+@media (min-width: 1240px) {
   .content-front-page .myButton {
-    background-color: #eb675e;
-    border-radius: 4px;
-    display: inline-block;
-    cursor: pointer;
-    color: #ffffff;
-    font-family: Arial;
-    font-size: 15px;
-    padding: 6px 15px;
-    text-decoration: none; }
-  .content-front-page .myButton:hover {
-    background-color: #eb675e; }
-  .content-front-page .myButton:active {
-    position: relative;
-    top: 1px; }
-  .content-front-page .quick-links {
-    margin-left: 5%;
-    font-size: 30px;
-    font-weight: lighter; }
-    .content-front-page .quick-links h2 {
-      margin-top: 12%;
-      margin-bottom: 12%; }
-  .content-front-page .benefits-of {
-    width: 449.57px;
-    font-family: "Noto Sans";
-    font-size: 20px;
-    line-height: 40px;
-    color: #FFFFFF;
-    margin-left: 20px; }
-    .content-front-page .benefits-of ul, .content-front-page .benefits-of li {
-      width: 377px;
-      padding-left: 0px;
-      font-family: "Noto Sans";
-      font-size: 25px;
-      line-height: 40px;
-      color: #000000; }
-  .content-front-page .benefits-button {
-    background-color: #4FC8A1;
-    border-radius: 6px;
-    margin-left: 10%;
-    cursor: pointer;
-    color: #ffffff;
-    font-family: Arial;
-    font-size: 27px;
-    font-weight: bold;
-    padding: 10px 15px;
-    text-decoration: none;
-    width: 320px;
-    height: 67px;
-    font-family: "Noto Sans";
-    text-align: center; }
-  .content-front-page .benefits-button:hover {
-    background-color: #eb675e; }
-  .content-front-page .benefits-button:active {
-    position: relative;
-    top: 1px; }
-  .content-front-page .we-need {
-    text-align: center; }
-  .content-front-page .nw-program {
-    width: 449.57px;
-    font-family: "Noto Sans";
-    font-size: 20px;
-    line-height: 40px;
-    color: #FFFFFF;
-    margin-left: 20px; }
-    .content-front-page .nw-program p {
-      font-family: "Noto Sans";
-      font-size: 25px;
-      color: #000000;
-      margin-top: 10%;
-      margin-bottom: 10%; }
-    .content-front-page .nw-program .parra {
-      margin-bottom: 10%;
-      margin-bottom: 10%;
-      width: 377px; }
-  .content-front-page .nw-button {
-    background-color: #4FC8A1;
-    border-radius: 6px;
-    margin-left: 17%;
-    cursor: pointer;
-    color: #ffffff;
-    font-family: Arial;
-    font-size: 30px;
-    font-weight: bold;
-    padding: 10px 15px;
-    text-decoration: none;
-    width: 320px;
-    height: 67px;
-    font-family: "Noto Sans";
-    text-align: center; }
-  .content-front-page .nw-button:hover {
-    background-color: #eb675e; }
-  .content-front-page .nw-button:active {
-    position: relative;
-    top: 1px; }
-  .content-front-page .line {
-    box-sizing: border-box;
-    width: 410px;
-    height: 2px;
-    border: 2px solid #2EB688;
-    margin-left: 5%; }
-  .content-front-page .get-involved {
-    width: 449.57px;
-    height: auto;
+    font-size: 24px;
+    margin-top: 20%; } }
+
+.content-front-page .myButton:hover {
+  background-color: #eb675e; }
+
+.content-front-page .myButton:active {
+  position: relative;
+  top: 1px; }
+
+.content-front-page .quick-links {
+  margin-left: 5%;
+  font-size: 30px;
+  font-weight: lighter; }
+  .content-front-page .quick-links h2 {
+    margin-top: 12%;
+    margin-bottom: 12%; }
+
+@media (min-width: 1240px) {
+  .content-front-page .quick-links, .content-front-page h2 {
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 50px; } }
+
+.content-front-page .benefits-of {
+  width: 449.57px;
+  font-family: "Noto Sans";
+  font-size: 20px;
+  line-height: 40px;
+  color: #FFFFFF;
+  margin-left: 20px; }
+  .content-front-page .benefits-of ul, .content-front-page .benefits-of li {
+    width: 377px;
+    padding-left: 0px;
     font-family: "Noto Sans";
     font-size: 25px;
     line-height: 40px;
-    color: #FFFFFF;
-    margin-left: 20px; }
-    .content-front-page .get-involved p {
-      width: 377px;
-      font-family: "Noto Sans";
-      font-size: 25px;
-      line-height: 40px;
-      color: #000000; }
-  .content-front-page .get-button {
-    background-color: #eb675e;
-    border-radius: 6px;
-    display: inline-block;
-    cursor: pointer;
-    color: #ffffff;
-    font-family: Arial;
-    font-size: 30px;
-    font-weight: bold;
-    padding: 10px 15px;
-    text-decoration: none;
-    width: 320px;
-    height: 67px;
+    color: #000000; }
+
+.content-front-page .benefits-button {
+  background-color: #4FC8A1;
+  border-radius: 6px;
+  margin-left: 10%;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 27px;
+  font-weight: bold;
+  padding: 10px 15px;
+  text-decoration: none;
+  width: 320px;
+  height: 67px;
+  font-family: "Noto Sans";
+  text-align: center; }
+
+.content-front-page .benefits-button:hover {
+  background-color: #eb675e; }
+
+.content-front-page .benefits-button:active {
+  position: relative;
+  top: 1px; }
+
+.content-front-page .we-need {
+  text-align: center; }
+
+.content-front-page .nw-program {
+  width: 449.57px;
+  font-family: "Noto Sans";
+  font-size: 20px;
+  line-height: 40px;
+  color: #FFFFFF;
+  margin-left: 20px; }
+  .content-front-page .nw-program p {
     font-family: "Noto Sans";
-    text-align: center;
-    margin-left: 5%; }
-  .content-front-page .get-button:hover {
-    background-color: #eb675e; }
-  .content-front-page .get-button:active {
-    position: relative;
-    top: 1px; }
-  .content-front-page .we-need {
+    font-size: 25px;
+    color: #000000;
+    margin-top: 10%;
+    margin-bottom: 10%; }
+  .content-front-page .nw-program .parra {
+    margin-bottom: 10%;
+    margin-bottom: 10%;
+    width: 377px; }
+
+.content-front-page .nw-button {
+  background-color: #4FC8A1;
+  border-radius: 6px;
+  margin-left: 17%;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 30px;
+  font-weight: bold;
+  padding: 10px 15px;
+  text-decoration: none;
+  width: 320px;
+  height: 67px;
+  font-family: "Noto Sans";
+  text-align: center; }
+
+.content-front-page .nw-button:hover {
+  background-color: #eb675e; }
+
+.content-front-page .nw-button:active {
+  position: relative;
+  top: 1px; }
+
+.content-front-page .line {
+  box-sizing: border-box;
+  width: 410px;
+  height: 2px;
+  border: 2px solid #2EB688;
+  margin-left: 5%; }
+
+@media (min-width: 1240px) {
+  .content-front-page .line {
+    width: 1340px; } }
+
+.content-front-page .get-involved {
+  width: 449.57px;
+  height: auto;
+  font-family: "Noto Sans";
+  font-size: 25px;
+  line-height: 40px;
+  color: #FFFFFF;
+  margin-left: 20px; }
+  .content-front-page .get-involved p {
     width: 377px;
-    margin-left: 20px;
+    font-family: "Noto Sans";
+    font-size: 25px;
+    line-height: 40px;
+    color: #000000; }
+
+.content-front-page .get-button {
+  background-color: #eb675e;
+  border-radius: 6px;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 30px;
+  font-weight: bold;
+  padding: 10px 15px;
+  text-decoration: none;
+  width: 320px;
+  height: 67px;
+  font-family: "Noto Sans";
+  text-align: center;
+  margin-left: 5%; }
+
+.content-front-page .get-button:hover {
+  background-color: #eb675e; }
+
+.content-front-page .get-button:active {
+  position: relative;
+  top: 1px; }
+
+.content-front-page .we-need {
+  width: 377px;
+  margin-left: 20px;
+  font-family: "Noto Sans";
+  font-size: 25px;
+  line-height: 46px;
+  color: #000000; }
+  .content-front-page .we-need p {
+    width: 377px;
     font-family: "Noto Sans";
     font-size: 25px;
     line-height: 46px;
-    color: #000000; }
-    .content-front-page .we-need p {
-      width: 377px;
-      font-family: "Noto Sans";
-      font-size: 25px;
-      line-height: 46px;
-      color: #000000; }
+    color: #000000;
+    text-align: left;
+    margin-left: 5%; }
+  .content-front-page .we-need .quote-block {
+    display: -ms-flexbox;
+    display: flex; }
     .content-front-page .we-need .quote-block .quote-line {
       width: 6.34px;
       height: 165px;
-      background-color: #D93B57; }
+      background-color: #D93B57;
+      margin-left: 4%;
+      margin-top: 7%; }
     .content-front-page .we-need .quote-block .quote-voluntering {
-      width: 325px; }
-  .content-front-page .pie-graph {
-    background: url("../../images/pie-graph.jpg") 100%, linear-gradient(rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5));
-    width: 287px;
-    height: 468px;
-    background-size: 100% auto;
-    margin-left: 17%; }
-  .content-front-page .featured {
+      width: 325px;
+      margin-left: 7%;
+      text-align: left; }
+  @media (min-width: 1240px) {
+    .content-front-page .we-need .dos {
+      display: -ms-flexbox;
+      display: flex; } }
+
+.content-front-page .pie-graph {
+  background: url("../../images/pie-graph.jpg") 100%, linear-gradient(rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5));
+  width: 287px;
+  height: 468px;
+  background-size: 100% auto;
+  margin-left: 17%; }
+
+@media (min-width: 1240px) {
+  .content-front-page .pie-grap {
+    display: -ms-flexbox;
+    display: flex; } }
+
+.content-front-page .we-need-buttons {
+  width: 450px;
+  padding-top: 20%; }
+  .content-front-page .we-need-buttons .support-button {
+    background-color: #eb675e;
+    border-radius: 6px;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    width: 180px;
+    height: 57px;
+    font-family: "Noto Sans";
     text-align: center; }
+  .content-front-page .we-need-buttons .support-button:hover {
+    background-color: #4FC8A1; }
+  .content-front-page .we-need-buttons .support-button:active {
+    position: relative;
+    top: 1px; }
+  .content-front-page .we-need-buttons .how-money-button {
+    background-color: #4FC8A1;
+    border-radius: 6px;
+    margin-left: 3%;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 12px;
+    text-decoration: none;
+    width: 180px;
+    height: 67px;
+    font-family: "Noto Sans";
+    text-align: center; }
+  .content-front-page .we-need-buttons .how-money-button:hover {
+    background-color: #eb675e; }
+  .content-front-page .we-need-buttons .how-money-button:active {
+    position: relative;
+    top: 1px; }
+
+.content-front-page .line2 {
+  box-sizing: border-box;
+  width: 410px;
+  height: 2px;
+  border: 2px solid #2EB688;
+  margin-left: 5%;
+  margin-top: 7%; }
+
+@media (min-width: 1240px) {
+  .content-front-page .line2 {
+    width: 1340px; } }
+
+.featured {
+  text-align: center; }
+
+.featured-news {
+  color: black; }
+
+@media (min-width: 1240px) {
+  .featured-news {
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: 8%;
+    margin-bottom: 5%; } }
+
+.read-more {
+  text-decoration: none;
+  font-family: "Noto Sans";
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 27px;
+  color: #248E6A; }
+
+.featured-one, .featured-two, .featured-three {
+  border-style: solid;
+  border-color: #2EB688;
+  border-width: thin;
+  margin-top: 5%; }
+  .featured-one p, .featured-two p, .featured-three p {
+    font-family: 'novo', sans-serif;
+    font-size: 20px;
+    text-align: left;
+    margin-left: 5%;
+    margin-right: 5%; }
+
+@media (min-width: 1240px) {
+  .featured-one, .featured-two, .featured-three {
+    margin-left: 30px;
+    margin-right: 30px;
+    width: 25%; } }
 
 /*Footer*/
 .footer-container {
