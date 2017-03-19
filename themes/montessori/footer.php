@@ -19,18 +19,18 @@
 						<li>Contact us</li>
 						<li>Get Involved</li>
 						</ul>
-						<p><a href="#">Follow Us<i class="fa fa facebook" aria-hidden="true"></i></a></p>
+						<p><a href="#">Follow Us<i class="fa fa-facebook" aria-hidden="true"></i></a></p>
 						</div>
 						<div class="address-info">
 							<p>Suite 379, 104-1015 Columbia Street</p>
 							<p>New Westminster BC, V3M 6V3</P>
-							</div><!--address-info-->
 							<P class="email"><a href="info@newwestmontessori.ca">info@newwestmontessori.ca</a></p>
-							
+								</div><!--address-info-->
+								</div><!-- .site-info -->
 							<div class="copyright">
-								<p>2016 New Westminster Montessori Society. All rights reserved</p>
+								<p><i class="fa fa-copyright" aria-hidden="true"></i>2016 New Westminster Montessori Society. All rights reserved</p>
 					<!--<a href="<?php echo esc_url( 'https://wordpress.org/' ); ?>"><?php printf( esc_html( 'Proudly powered by %s' ), 'WordPress' ); ?></a>-->
-				</div><!-- .site-info -->
+			
 			</footer><!-- #colophon -->
 		</div><!-- #page -->
 

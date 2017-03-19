@@ -1106,22 +1106,54 @@ object {
 /*Footer*/
 .footer-container {
   background-color: #125A50;
-  width: 480px;
   height: auto; }
+  .footer-container .site-info {
+    text-decoration: none; }
+  @media (min-width: 1240px) {
+    .footer-container .site-info {
+      display: -ms-flexbox;
+      display: flex; } }
+  .footer-container .footer-menu {
+    margin-left: 0px; }
+  @media (min-width: 1240px) {
+    .footer-container .footer-menu {
+      margin-left: 30px; } }
   .footer-container .footer-menu p, .footer-container .footer-menu a, .footer-container .footer-menu li, .footer-container .footer-menu ul {
     text-decoration: none;
     color: white;
-    font-size: 18px;
+    font-size: 20px;
     list-style: none;
     display: inline-block;
     padding-left: 10px;
     padding-right: 9px; }
+  .footer-container .footer-menu .footer-menu, .footer-container .footer-menu li {
+    border-right: solid; }
+  @media (min-width: 1240px) {
+    .footer-container .footer-menu .footer-menu, .footer-container .footer-menu li {
+      padding-right: 30px;
+      margin-right: 35px; } }
+  .footer-container .footer-menu .footer-menu, .footer-container .footer-menu i {
+    padding: 5px 10px;
+    border: solid;
+    border-radius: 50px;
+    margin-left: 20px; }
+  .footer-container .address-info {
+    color: white; }
+  @media (min-width: 1240px) {
+    .footer-container .address-info {
+      margin-left: 17%; } }
   .footer-container .address-info, .footer-container a {
     color: white;
     font-size: 16px; }
+  @media (min-width: 1240px) {
+    .footer-container .address-info, .footer-container a {
+      font-size: 20px; } }
   .footer-container .email {
-    text-align: end;
+    text-align: center;
     margin-right: 10%; }
+  @media (min-width: 1240px) {
+    .footer-container .email {
+      text-align: left; } }
   .footer-container .copyright {
     color: white;
     font-size: 16px;
@@ -1129,5 +1161,11 @@ object {
     .footer-container .copyright p {
       margin-bottom: 0px;
       padding-bottom: 30px; }
+  @media (min-width: 1240px) {
+    .footer-container .copyright {
+      font-size: 20px; } }
   .footer-container .address-info p {
-    display: none; }
+    visibility: hidden; }
+  @media (min-width: 1240px) {
+    .footer-container .address-info p {
+      visibility: visible; } }
