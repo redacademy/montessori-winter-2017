@@ -742,7 +742,7 @@ object {
   .content-front-page .main-picture {
     background-size: 100% auto;
     height: 650px;
-    position: absolute; } }
+    position: relative; } }
 
 .content-front-page .welcome-text {
   width: 481px;
@@ -755,7 +755,8 @@ object {
     background-size: 100% auto;
     height: 650px;
     width: 550px;
-    position: relative; } }
+    position: absolute;
+    top: 100px; } }
 
 .content-front-page .welcome {
   width: 466.66px;
