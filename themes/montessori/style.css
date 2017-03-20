@@ -730,6 +730,9 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
+.content-front-page h2 {
+  margin-left: 5%; }
+
 .content-front-page .main-picture {
   background: url("../../images/header-pic2.jpg") 100%, linear-gradient(rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5));
   height: 211px;
@@ -738,7 +741,8 @@ object {
 @media (min-width: 1240px) {
   .content-front-page .main-picture {
     background-size: 100% auto;
-    height: 650px; } }
+    height: 650px;
+    position: absolute; } }
 
 .content-front-page .welcome-text {
   width: 481px;
@@ -750,7 +754,8 @@ object {
   .content-front-page .welcome-text {
     background-size: 100% auto;
     height: 650px;
-    width: 550px; } }
+    width: 550px;
+    position: relative; } }
 
 .content-front-page .welcome {
   width: 466.66px;
@@ -760,7 +765,8 @@ object {
   line-height: 42px;
   color: #FFFFFF;
   padding-top: 5%;
-  margin-top: 0px; }
+  margin-top: 0px;
+  margin-left: 5%; }
 
 @media (min-width: 1240px) {
   .content-front-page .welcome {
@@ -772,7 +778,8 @@ object {
   width: 119.23px;
   height: 4px;
   border: 3px solid #FFFFFF;
-  margin-top: 7%; }
+  margin-top: 7%;
+  margin-left: 5%; }
 
 @media (min-width: 1240px) {
   .content-front-page .border {
@@ -823,7 +830,8 @@ object {
   font-weight: lighter; }
   .content-front-page .quick-links h2 {
     margin-top: 12%;
-    margin-bottom: 12%; }
+    margin-bottom: 12%;
+    margin-left: 5%; }
 
 @media (min-width: 1240px) {
   .content-front-page .quick-links, .content-front-page h2 {
@@ -950,11 +958,11 @@ object {
   font-weight: bold;
   padding: 10px 15px;
   text-decoration: none;
-  width: 320px;
-  height: 67px;
+  width: 265px;
+  height: 60px;
   font-family: "Noto Sans";
   text-align: center;
-  margin-left: 5%; }
+  margin-left: 12%; }
 
 .content-front-page .get-button:hover {
   background-color: #eb675e; }
@@ -964,14 +972,12 @@ object {
   top: 1px; }
 
 .content-front-page .we-need {
-  width: 377px;
   margin-left: 20px;
   font-family: "Noto Sans";
   font-size: 25px;
   line-height: 46px;
   color: #000000; }
   .content-front-page .we-need p {
-    width: 377px;
     font-family: "Noto Sans";
     font-size: 25px;
     line-height: 46px;
@@ -981,16 +987,31 @@ object {
   .content-front-page .we-need .quote-block {
     display: -ms-flexbox;
     display: flex; }
+    @media (min-width: 1240px) {
+      .content-front-page .we-need .quote-block {
+        margin-left: 10%; } }
     .content-front-page .we-need .quote-block .quote-line {
       width: 6.34px;
       height: 165px;
       background-color: #D93B57;
       margin-left: 4%;
       margin-top: 7%; }
+      @media (min-width: 1240px) {
+        .content-front-page .we-need .quote-block .quote-line {
+          height: 86px;
+          margin-top: 3%; } }
     .content-front-page .we-need .quote-block .quote-voluntering {
       width: 325px;
       margin-left: 7%;
       text-align: left; }
+    @media (min-width: 1240px) {
+      .content-front-page .we-need .quote-block .quote-voluntering {
+        width: 50%; } }
+  .content-front-page .we-need .one {
+    text-decoration: none; }
+  @media (min-width: 1240px) {
+    .content-front-page .we-need .one {
+      width: 70%; } }
   @media (min-width: 1240px) {
     .content-front-page .we-need .dos {
       display: -ms-flexbox;
@@ -1001,16 +1022,17 @@ object {
   width: 287px;
   height: 468px;
   background-size: 100% auto;
-  margin-left: 17%; }
+  margin-left: 23%; }
 
 @media (min-width: 1240px) {
-  .content-front-page .pie-grap {
+  .content-front-page .pie-graph {
     display: -ms-flexbox;
-    display: flex; } }
+    display: flex;
+    margin-left: 5%; } }
 
 .content-front-page .we-need-buttons {
-  width: 450px;
-  padding-top: 20%; }
+  padding-top: 10%;
+  margin-left: 7%; }
   .content-front-page .we-need-buttons .support-button {
     background-color: #eb675e;
     border-radius: 6px;
@@ -1051,6 +1073,10 @@ object {
     position: relative;
     top: 1px; }
 
+@media (min-width: 1240px) {
+  .content-front-page .we-need-buttons {
+    padding-top: 3%; } }
+
 .content-front-page .line2 {
   box-sizing: border-box;
   width: 410px;
@@ -1061,10 +1087,16 @@ object {
 
 @media (min-width: 1240px) {
   .content-front-page .line2 {
-    width: 1340px; } }
+    width: 1340px;
+    margin-top: 3%; } }
+
+.featured {
+  margin-bottom: 5%; }
 
 .featured {
   text-align: center; }
+  .featured h2 {
+    margin-left: 5%; }
 
 .featured-news {
   color: black; }
@@ -1074,7 +1106,8 @@ object {
     display: -ms-flexbox;
     display: flex;
     margin-left: 8%;
-    margin-bottom: 5%; } }
+    margin-bottom: 5%;
+    height: 425px; } }
 
 .read-more {
   text-decoration: none;
@@ -1121,11 +1154,14 @@ object {
   .footer-container .footer-menu p, .footer-container .footer-menu a, .footer-container .footer-menu li, .footer-container .footer-menu ul {
     text-decoration: none;
     color: white;
-    font-size: 20px;
+    font-size: 18px;
     list-style: none;
     display: inline-block;
     padding-left: 10px;
     padding-right: 9px; }
+  @media (min-width: 1240px) {
+    .footer-container .footer-menu .footer-menu, .footer-container .footer-menu p, .footer-container .footer-menu a, .footer-container .footer-menu li, .footer-container .footer-menu ul {
+      font-size: 20px; } }
   .footer-container .footer-menu .footer-menu, .footer-container .footer-menu li {
     border-right: solid; }
   @media (min-width: 1240px) {

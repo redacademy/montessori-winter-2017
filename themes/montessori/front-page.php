@@ -73,13 +73,16 @@ get_header(); ?>
             </div><!--dos-->
             </section>
             <div class="we-need-buttons">
+                
               <a href="#" class="support-button">Support Now</a>
+              
               <a href="#" class="how-money-button">How $ is spent</a>
               </div><!--we need buttons-->
             
            <div class="line2"></div>
+            <h2>Featured News</h2>
             <section class="featured">
-                <h2>Featured News</h2>
+               
                 <div class="featured-news">
                     <div class="featured-one">
                 <?php echo CFS()->get('feature_news_text');?>

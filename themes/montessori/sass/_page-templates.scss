@@ -5,7 +5,9 @@
 /* Front page */
 .content-front-page{
  //width: 480px;
-
+h2{
+    margin-left: 5%;
+}
  .main-picture {
 	background: url("../../images/header-pic2.jpg")  100%, linear-gradient( rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) );
 	//width:480px;
@@ -17,6 +19,7 @@
       .main-picture {
       background-size: 100% auto;
       height: 650px;
+      position:absolute;
        } 
       }
 
@@ -32,6 +35,7 @@ color:white;
       background-size: 100% auto;
       height: 650px;
       width:550px;
+      position:relative;
        } 
 }
 .welcome{
@@ -43,6 +47,7 @@ line-height: 42px;
 color: #FFFFFF; 
 padding-top:5%;
 margin-top:0px;
+margin-left:5%;
 }
 
 @media (min-width: 1240px) {
@@ -57,6 +62,7 @@ width: 119.23px;
 height: 4px;
 border: 3px solid #FFFFFF;
 margin-top:7%;
+margin-left:5%;
 }
 @media (min-width: 1240px) {
       .border {
@@ -114,6 +120,7 @@ margin-left:20px;
     h2{
         margin-top:12%;
         margin-bottom: 12%;
+        margin-left: 5%;
     }
     
 
@@ -165,6 +172,7 @@ margin-left: 10%;
 	position:relative;
 	top:1px;
 }
+
 .we-need{
     text-align: center;
 }
@@ -267,11 +275,11 @@ color: #000000;
     font-weight: bold;
 	padding:10px 15px;
 	text-decoration:none;
-	width: 320px;
-   height: 67px;
+	width: 265px;
+   height: 60px;
    font-family: "Noto Sans";
     text-align: center; 
-    margin-left:5%;
+    margin-left:12%;
 }
 .get-button:hover {
 	background-color:#eb675e;
@@ -281,14 +289,14 @@ color: #000000;
 	top:1px;
 }
 .we-need{
-    width: 377px;
+   // width: 377px;
 margin-left:20px;
 font-family: "Noto Sans";
 font-size: 25px;
 line-height: 46px;
 color: #000000;
 p{
-    width: 377px;
+   // width: 377px;
 
 font-family: "Noto Sans";
 font-size: 25px;
@@ -296,26 +304,43 @@ line-height: 46px;
 color: #000000;
 text-align: left;
 margin-left: 5%;
+
 }
 .quote-block{
     display:flex;
+     @media (min-width: 1240px){
+      margin-left:10%;
+    }
     .quote-line{
 width: 6.34px;
 height: 165px;
 background-color: #D93B57;
 margin-left: 4%;
 margin-top:7%;
+ @media (min-width: 1240px){
+      height:86px;
+      margin-top:3%;
     }
+
+    }
+   
     .quote-voluntering{
      width:325px;
      margin-left: 7%;
      text-align: left;
     }
+    @media (min-width: 1240px){
+    .quote-voluntering{
+        width:50%;
+    }
 }
-
+}
+.one{
+    text-decoration: none;
+}
 @media (min-width: 1240px) {
       .one {
-  // width: 6.9%;
+  width: 70%;
    
        } 
 }
@@ -331,25 +356,29 @@ margin-top:7%;
 
 }
 
+
 .pie-graph{
   background: url("../../images/pie-graph.jpg")  100%, linear-gradient( rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) );
 	width: 287px;
    height: 468px;
     background-size: 100% auto; 
-    margin-left: 17%;
+    margin-left: 23%;
 }
 @media (min-width: 1240px) {
-      .pie-grap{
+      .pie-graph{
   display:flex;
+  margin-left:5%;
    
        } 
 }
 
 
-
 .we-need-buttons{
-    width: 450px;
-   padding-top:20%;
+   // width: 450px;
+   padding-top:10%;
+   margin-left: 7%;
+   
+
 .support-button{ 
 	background-color:#eb675e;
 	border-radius:6px;
@@ -400,6 +429,13 @@ margin-left: 3%;
 }
 }
 
+@media (min-width: 1240px){
+    .we-need-buttons{
+        padding-top:3%;
+    }
+}
+
+
 .line2{
   box-sizing: border-box;
 width: 410px;
@@ -411,6 +447,7 @@ margin-top:7%;
 @media (min-width: 1240px) {
       .line2 {
    width: 1340px;
+   margin-top:3%;
    
        } 
 }
@@ -419,8 +456,13 @@ margin-top:7%;
 
 }
 
-
 .featured{
+    margin-bottom: 5%;
+}
+.featured{
+    h2{
+        margin-left:5%;
+    }
     text-align: center;
 }
 .featured-news{
@@ -431,6 +473,7 @@ margin-top:7%;
    display:flex;
    margin-left: 8%;
    margin-bottom: 5%;
+   height: 425px;
        } 
 }
 
@@ -500,12 +543,17 @@ margin-right: 30px;
     p,a, li,ul {
         text-decoration: none;
         color:white;
-        font-size:20px;
+        font-size:18px;
         list-style: none;
         display: inline-block;
         padding-left: 10px;
         padding-right: 9px;
         
+}
+@media (min-width: 1240px){
+    .footer-menu,p,a,li,ul{
+        font-size:20px;
+    }
 }
 
 
