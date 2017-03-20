@@ -85,15 +85,18 @@ get_header(); ?>
                
                 <div class="featured-news">
                     <div class="featured-one">
-                <?php echo CFS()->get('feature_news_text');?>
+                    <h4>Express your interest in Montessori in the Middle School.</h4>
+                <p><?php echo CFS()->get('feature_news_text');?></p>
                 <a href="#" class="read-more">Read More</a>
                 </div> <!--featured-one-->
                 <div class="featured-two">
-                <?php echo CFS()->get('featured_news_text_two');?>
+                    <h4>Our new project-Interviews with New Westminster Montessori teachers.</h4>
+               <p> <?php echo CFS()->get('featured_news_text_two');?></p>
                  <a href="#" class="read-more">Read More</a>
                 </div><!--featured-two-->
                 <div class="featured-three">
-                <?php echo CFS()->get('featured_news_text_three');?>
+                    <h4>All parents are invited! Get involved in Our Society Board Meetings</h4>
+                <p><?php echo CFS()->get('featured_news_text_three');?></p>
                  <a href="#" class="read-more">Read More</a>
                 </div><!-- featured three-->
                 </div><!-- featured-news-->
