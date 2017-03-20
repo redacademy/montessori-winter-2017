@@ -65,11 +65,16 @@ get_header(); ?>
             <!--quote block-->
             <p>It cost approximately $15,000 to properly equip a classroom with Montessori materials, with ongoing cost each
                 year.</p>
-            <p>This amount can be raised if all parents in the program donate $100 per child per year or $10 per month for 10
+            <p>This amount can be raised if all parents in the program donate <b>$100 per child per year or $10 per month</b> for 10
                 months. All donations are strictly voluntary, tax-deductible, and not mandatory.
             </p>
             </div><!--one-->
+            <div class="ja">
             <div class="pie-graph"></div>
+                <div class="pie-text">
+                    <p>Your monthly contribution cost only two Lattes a month</p>
+                    </div>
+            </div>
             </div><!--dos-->
             </section>
             <div class="we-need-buttons">

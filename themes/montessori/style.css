@@ -974,6 +974,7 @@ object {
 
 .content-front-page .we-need {
   margin-left: 20px;
+  margin-right: 20px;
   font-family: "Noto Sans";
   font-size: 25px;
   line-height: 46px;
@@ -1019,7 +1020,7 @@ object {
       display: flex; } }
 
 .content-front-page .pie-graph {
-  background: url("../../images/pie-graph.jpg") 100%, linear-gradient(rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5));
+  background: url("../../images/pie-graph1.jpg") 100%, linear-gradient(rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5));
   width: 287px;
   height: 468px;
   background-size: 100% auto;
@@ -1028,8 +1029,12 @@ object {
 @media (min-width: 1240px) {
   .content-front-page .pie-graph {
     display: -ms-flexbox;
-    display: flex;
-    margin-left: 5%; } }
+    display: flex; } }
+
+.content-front-page .pie-text {
+  text-align: center;
+  width: 70%;
+  margin-left: 15%; }
 
 .content-front-page .we-need-buttons {
   padding-top: 10%;
@@ -1199,6 +1204,56 @@ object {
       color: #248E6A; }
     .featured-news .featured-one:hover h4, .featured-news .featured-two:hover h4, .featured-news .featured-three:hover h4 {
       display: none; } }
+
+/*ABOUT PAGE*/
+@media (min-width: 1240px) {
+  .content-about h3 {
+    display: none; } }
+
+.content-about .navigation-sub-menu ul, .content-about .navigation-sub-menu a {
+  list-style: none;
+  text-decoration: none;
+  display: -ms-flexbox;
+  display: flex;
+  background: #248E6A;
+  color: white;
+  border-right: solid;
+  font-size: 24px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-bottom: 15px;
+  margin-top: 0px;
+  padding-top: 8px; }
+
+@media (min-width: 1240px) {
+  .content-about .navigation-sub-menu li {
+    margin-right: 30px; } }
+
+.content-about .about-title {
+  text-transform: uppercase;
+  margin-left: 15%; }
+
+.content-about .about-back, .content-about a {
+  text-align: right;
+  padding-right: 20px;
+  text-decoration: none;
+  color: black; }
+
+.content-about .about-and-back {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between; }
+
+.content-about .back {
+  display: none; }
+
+@media (min-width: 1240px) {
+  .content-about .back {
+    display: inline;
+    margin-right: 30%; } }
 
 /*Footer*/
 .footer-container {

@@ -292,6 +292,7 @@ color: #000000;
 .we-need{
    // width: 377px;
 margin-left:20px;
+margin-right: 20px;
 font-family: "Noto Sans";
 font-size: 25px;
 line-height: 46px;
@@ -359,7 +360,7 @@ margin-top:7%;
 
 
 .pie-graph{
-  background: url("../../images/pie-graph.jpg")  100%, linear-gradient( rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) );
+  background: url("../../images/pie-graph1.jpg")  100%, linear-gradient( rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) );
 	width: 287px;
    height: 468px;
     background-size: 100% auto; 
@@ -368,12 +369,20 @@ margin-top:7%;
 @media (min-width: 1240px) {
       .pie-graph{
   display:flex;
-  margin-left:5%;
+ // margin-left:5%;
    
        } 
 }
-
-
+.pie-text{
+    text-align: center;
+    width:70%;
+    margin-left: 15%;
+}
+@media (min-width: 1240px){
+    .pie-text{
+     //   margin-left: 3%;
+    }
+}
 .we-need-buttons{
    // width: 450px;
    padding-top:10%;
@@ -596,7 +605,73 @@ p,a { opacity: 0; transition: opacity 0.5s linear; }
 }
 }
 
+/*ABOUT PAGE*/
+.content-about{
+   //width:480px;
+ @media (min-width: 1240px){
+     h3{
+         display:none;
+     }
+ }
+.navigation-sub-menu{
+    ul,a{
+ list-style: none;
+ text-decoration: none;
+ display:flex;
+ background: #248E6A;
+ color:white;
+ border-right: solid;
+ font-size:24px;
+ flex-wrap: wrap;
+ padding-right: 15px;
+ padding-left: 15px;
+ margin-bottom: 15px;
+    margin-top: 0px;
+    padding-top:8px;
 
+    }
+    
+}
+    // .navigation-sub-menu{
+    //     position:fixed;
+    //     top:1;
+    //     margin:0px;
+    //     width:100%;
+    // }
+@media (min-width: 1240px){
+    .navigation-sub-menu{
+  
+    li{
+        margin-right: 30px;
+    }
+}
+}
+.about-title{
+    text-transform: uppercase;
+    margin-left: 15%;
+}
+.about-back,a{
+    text-align: right;
+    padding-right: 20px;
+    text-decoration: none;
+    color:black;
+}
+.about-and-back{
+    display:flex;
+    justify-content: space-between;
+}
+
+// a:v
+.back{
+    display:none;
+}
+@media (min-width: 1240px){
+    .back{
+        display:inline;
+        margin-right: 30%;
+    }
+}
+}
 
 /*Footer*/
 .footer-container{
