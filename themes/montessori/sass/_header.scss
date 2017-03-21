@@ -1,12 +1,16 @@
-
-
 .site-header {
+    width: 100%;
+    margin: 0 auto;
+    height: 100px;
+    border-bottom: solid 1px #999999;
+}
+
+.header-content {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 100%;
-    height: 100px;
-    border-bottom: solid 1px #999999;
+    width: 95%;
+    margin: 0 auto;
 }
 
 div.home-link-logo {
@@ -22,13 +26,12 @@ div.home-link-logo {
 
 .main-navigation {
     max-width: 50px;
-    display: block;
+    display: flex;
     flex-direction: row;
     align-content: center;
     justify-content: flex-end;
     flex-wrap: nowrap;
     padding-top: 1.5rem;
-    padding-right: 5rem;
 }
 
 .main-navigation ul {
@@ -65,7 +68,6 @@ div.home-link-logo {
     list-style: none;
     color:#000;
     padding: 1rem 1rem;
-    padding-right: 2rem;
 }
 
 .main-navigation a:visited {
@@ -80,7 +82,6 @@ button.menu-toggle {
     width: 50px;
     height: 50px;
     z-index: 2;
-    margin-right: 1rem;
     background-color: white;
     border: none;
     align-self: center;
@@ -99,4 +100,40 @@ button.menu-toggle {
     0 1em 0 0 grey,
     0 2em 0 0 grey;
     border: none;
+}
+
+@media screen and (min-width: 1120px) {
+
+.site-header  {
+    position: fixed;
+    background-color: white;
+    z-index: 100;
+}
+
+.main-navigation ul {
+    height: 30px;
+    width: 78%;
+    display: flex;
+    flex-direction: row;
+    // position: absolute;
+    top: 60px;
+    visibility: visible;
+    opacity: 1;
+    margin-right: 50px;
+}
+
+button.menu-toggle {
+    display:none;
+}
+
+.main-navigation li {
+    padding: 1rem;
+    margin: 0 auto;
+    padding: 0;
+}
+.main-navigation a {
+    padding: 0;
+    font-size: 20px;
+}
+
 }

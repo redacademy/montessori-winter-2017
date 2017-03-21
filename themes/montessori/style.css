@@ -383,15 +383,20 @@ textarea {
   width: 100%; }
 
 .site-header {
+  width: 100%;
+  margin: 0 auto;
+  height: 100px;
+  border-bottom: solid 1px #999999; }
+
+.header-content {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: row;
       flex-direction: row;
   -ms-flex-pack: justify;
       justify-content: space-between;
-  width: 100%;
-  height: 100px;
-  border-bottom: solid 1px #999999; }
+  width: 95%;
+  margin: 0 auto; }
 
 div.home-link-logo {
   background: url(../../images/logo/montessori-logo.svg);
@@ -405,7 +410,8 @@ div.home-link-logo {
 
 .main-navigation {
   max-width: 50px;
-  display: block;
+  display: -ms-flexbox;
+  display: flex;
   -ms-flex-direction: row;
       flex-direction: row;
   -ms-flex-line-pack: center;
@@ -414,8 +420,7 @@ div.home-link-logo {
       justify-content: flex-end;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
-  padding-top: 1.5rem;
-  padding-right: 5rem; }
+  padding-top: 1.5rem; }
 
 .main-navigation ul {
   height: 100vh;
@@ -447,8 +452,7 @@ div.home-link-logo {
   text-transform: uppercase;
   list-style: none;
   color: #000;
-  padding: 1rem 1rem;
-  padding-right: 2rem; }
+  padding: 1rem 1rem; }
 
 .main-navigation a:visited {
   text-transform: uppercase;
@@ -461,7 +465,6 @@ button.menu-toggle {
   width: 50px;
   height: 50px;
   z-index: 2;
-  margin-right: 1rem;
   background-color: white;
   border: none;
   -ms-flex-item-align: center;
@@ -479,6 +482,32 @@ button.menu-toggle {
   border-radius: 5px;
   box-shadow: 0 1em 0 0 grey, 0 2em 0 0 grey;
   border: none; }
+
+@media screen and (min-width: 1120px) {
+  .site-header {
+    position: fixed;
+    background-color: white;
+    z-index: 100; }
+  .main-navigation ul {
+    height: 30px;
+    width: 78%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+        flex-direction: row;
+    top: 60px;
+    visibility: visible;
+    opacity: 1;
+    margin-right: 50px; }
+  button.menu-toggle {
+    display: none; }
+  .main-navigation li {
+    padding: 1rem;
+    margin: 0 auto;
+    padding: 0; }
+  .main-navigation a {
+    padding: 0;
+    font-size: 20px; } }
 
 /*--------------------------------------------------------------
 # Navigation
@@ -959,3 +988,73 @@ object {
       padding-bottom: 30px; }
   .footer-container .address-info p {
     display: none; }
+
+.page-template-contact main.site-main {
+  width: 95%;
+  margin: 0 auto; }
+
+.entry-header {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  border-bottom: 2px solid #2EB688; }
+
+.entry-title {
+  text-transform: uppercase;
+  margin-bottom: 0;
+  font-size: 40px; }
+
+p.scroller {
+  font-size: 35px;
+  margin-bottom: 0; }
+
+p.in-touch {
+  font-size: 22px; }
+
+p.send-message {
+  font-size: 20px; }
+
+input.wpcf7-form-control {
+  width: 70%;
+  height: 45px; }
+
+input.contact_number {
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  height: 45px; }
+
+select.contact_subject,
+select.contact_schools,
+select.contact_grade {
+  width: 70%;
+  height: 45px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  background-color: #fff; }
+
+textarea.contact_message {
+  width: 70%;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  height: 15rem; }
+
+div.submit_form {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-pack: center;
+      justify-content: center;
+  width: 70%; }
+
+input.wpcf7-submit {
+  width: 60%;
+  color: white;
+  background-color: #4FC8A1;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 5px;
+  margin: 0 auto; }
