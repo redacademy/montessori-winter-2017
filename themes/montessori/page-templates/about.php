@@ -17,7 +17,7 @@ get_header(); ?>
 			<ul>
                 <div class="back"><li><a href="#back-top">Back to top</a></li></div>
              
-				<li><a href="#our-history">Our History</a></li>
+				<li><a href="#our-history-sub">Our History</a></li>
 				<li><a href="#our-role">Our Role</a></li>
 				<li><a href="#meetings">Meetings</a></li>
 				<li><a href="#board-members">Board Members</a></li>
@@ -47,6 +47,11 @@ get_header(); ?>
             </div>
              <section class="board-members">
                  <h2>Board Members</h2>
+                <?php echo CFS()->get('	board_members_title');?>
+                <?php echo CFS()->get('	board_member_picture');?>
+                <?php echo CFS()->get('	board_member_name');?>
+                <?php echo CFS()->get('board_member_job_title');?>
+
          </section>
          <div class="members at large">
              <h3>Members at Large</h3>

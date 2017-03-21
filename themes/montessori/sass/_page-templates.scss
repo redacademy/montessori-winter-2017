@@ -152,19 +152,6 @@ color: #000000;
 }
 .benefits-button {
 	background-color:#4FC8A1;
-	border-radius:6px;
-margin-left: 10%;
-	cursor:pointer;
-	color:#ffffff;
-	font-family:Arial;
-	font-size:27px;
-    font-weight: bold;
-	padding:10px 15px;
-	text-decoration:none;
-	width: 320px;
-   height: 67px;
-   font-family: "Noto Sans";
-    text-align: center; 
 }
 .benefits-button:hover {
 	background-color:#eb675e;
@@ -178,9 +165,6 @@ margin-left: 10%;
     text-align: center;
 }
  
-
-
-
 .nw-program{
     width: 449.57px;
 
@@ -207,19 +191,7 @@ margin-bottom:10%;
 }
 .nw-button {
 	background-color:#4FC8A1;
-	border-radius:6px;
-margin-left: 17%;
-	cursor:pointer;
-	color:#ffffff;
-	font-family:Arial;
-	font-size:30px;
-    font-weight: bold;
-	padding:10px 15px;
-	text-decoration:none;
-	width: 320px;
-   height: 67px;
-   font-family: "Noto Sans";
-    text-align: center; 
+
 }
 .nw-button:hover {
 	background-color:#eb675e;
@@ -228,7 +200,20 @@ margin-left: 17%;
 	position:relative;
 	top:1px;
 }
-
+.benefits-button, .nw-button, .get-button{
+    border-radius: 6px;
+    display:inline-block;
+    cursor:pointer;
+    color:white;
+    font-size:25px;
+    font-weight: 700;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    font-family: "Noto Sans", sans-serif;
+    width: 330px;
+    margin-left: 5%;
+}
 
 
 .line{
@@ -267,30 +252,15 @@ color: #000000;
 }
 .get-button {
 	background-color:#eb675e;
-	border-radius:6px;
-	display:inline-block;
-	cursor:pointer;
-	color:#ffffff;
-	font-family:Arial;
-	font-size:30px;
-    font-weight: bold;
-	padding:10px 15px;
-	text-decoration:none;
-	width: 265px;
-   height: 60px;
-   font-family: "Noto Sans";
-    text-align: center; 
-    margin-left:12%;
 }
 .get-button:hover {
-	background-color:#eb675e;
+	background-color:#4FC8A1;
 }
 .get-button:active {
 	position:relative;
 	top:1px;
 }
 .we-need{
-   // width: 377px;
 margin-left:20px;
 margin-right: 20px;
 font-family: "Noto Sans";
@@ -384,27 +354,27 @@ margin-top:7%;
     }
 }
 .we-need-buttons{
-   // width: 450px;
    padding-top:10%;
-   margin-left: 7%;
-   
+   margin-left: 5%;
 
-.support-button{ 
-	background-color:#eb675e;
-	border-radius:6px;
+  .support-button,.how-money-button{
+border-radius:6px;
 	display:inline-block;
 	cursor:pointer;
 	color:#ffffff;
-	font-family:Arial;
-	font-size:30px;
+	font-size:25px;
     font-weight: bold;
-	//padding:10px;
 	text-decoration:none;
 	width: 180px;
-   height: 57px;
+  padding: 10px 1px;
    font-family: "Noto Sans";
     text-align: center; 
-    //margin-left:5%;
+    margin-left: 5%;
+  } 
+
+.support-button{ 
+	background-color:#eb675e;
+
 }
 .support-button:hover {
 	background-color:#4FC8A1;
@@ -416,19 +386,7 @@ margin-top:7%;
 
 .how-money-button{
 	background-color:#4FC8A1;
-	border-radius:6px;
-margin-left: 3%;
-	cursor:pointer;
-	color:#ffffff;
-	font-family:Arial;
-	font-size:30px;
-    font-weight: bold;
-	padding:12px;
-	text-decoration:none;
-	width: 180px;
-   height: 67px;
-   font-family: "Noto Sans";
-    text-align: center; 
+
 }
 .how-money-button:hover {
 	background-color:#eb675e;
