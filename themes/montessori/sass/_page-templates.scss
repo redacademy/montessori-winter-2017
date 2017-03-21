@@ -33,7 +33,7 @@ color:white;
 @media (min-width: 1240px) {
       .welcome-text {
       background-size: 100% auto;
-      height: 650px;
+      height: 582px;
       width:550px;
       position:absolute;
       top:100px;
@@ -115,7 +115,7 @@ margin-left:20px;
 	top:1px;
 }
 .quick-links{
-  margin-left: 5%;
+  margin-left: 8%;
   font-size:30px;
   font-weight: lighter;
     h2{
@@ -736,6 +736,9 @@ p,a { opacity: 0; transition: opacity 0.5s linear; }
 .address-info{
     p{
         visibility: hidden;
+    }
+    a{
+        visibility: visible;
     }
 }
 @media (min-width: 1240px){

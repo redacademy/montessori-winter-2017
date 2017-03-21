@@ -480,7 +480,7 @@ button.menu-toggle {
   height: 0.37em;
   background: grey;
   border-radius: 5px;
-  box-shadow: 0 1em 0 0 grey, 0 2em 0 0 grey;
+  box-shadow: 0 1em 0 0 grey, 0 2em 0 0 grey;
   border: none; }
 
 @media screen and (min-width: 1120px) {
@@ -782,7 +782,7 @@ object {
 @media (min-width: 1240px) {
   .content-front-page .welcome-text {
     background-size: 100% auto;
-    height: 650px;
+    height: 582px;
     width: 550px;
     position: absolute;
     top: 100px; } }
@@ -855,7 +855,7 @@ object {
   top: 1px; }
 
 .content-front-page .quick-links {
-  margin-left: 5%;
+  margin-left: 8%;
   font-size: 30px;
   font-weight: lighter; }
   .content-front-page .quick-links h2 {
@@ -1312,6 +1312,8 @@ object {
       font-size: 20px; } }
   .footer-container .address-info p {
     visibility: hidden; }
+  .footer-container .address-info a {
+    visibility: visible; }
   @media (min-width: 1240px) {
     .footer-container .address-info p {
       visibility: visible; } }
