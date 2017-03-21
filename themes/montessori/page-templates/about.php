@@ -9,10 +9,28 @@ get_header(); ?>
 
     <div id="primary" class="content-about">
         <main id="main" class="site-main" role="main">
-               
-<p>you are in about page</p>
+            <div class="about-and-back">
+   <div><h3 class="about-title"><?php echo the_title();?></h3></div>
+    <div><h3 class="about-back"><a href="#back-to-top">Back to top</a></h3></div>
+   </div>
+<div class="navigation-sub-menu">
+			<ul>
+                <div class="back"><li><a href="#back-top">Back to top</a></li></div>
+             
+				<li><a href="#our-history">Our History</a></li>
+				<li><a href="#our-role">Our Role</a></li>
+				<li><a href="#meetings">Meetings</a></li>
+				<li><a href="#board-members">Board Members</a></li>
+                <li><a href="#news-letter">Newsletter</a></li>
+             
+			</ul>
+		</div><!--navigation-sub-menu-->
+
+
+
             <div class="about-container">
 <section class="our-history">
+  
                 <?php echo CFS()->get('text_and_quote');?>
                 <?php echo CFS()->get('title');?>
                 <?php echo CFS()->get('main_text');?>
@@ -20,6 +38,7 @@ get_header(); ?>
                  </section>
                  
             <section class="our-role">
+               
                 <?php echo CFS()->get('secondary_text_and_quote');?>
                 <?php echo CFS()->get('secondary_title');?>
                 <?php echo CFS()->get('secondary_text');?>
