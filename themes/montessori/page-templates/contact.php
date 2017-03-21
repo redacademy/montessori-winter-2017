@@ -1,6 +1,6 @@
 <?php
 /**
-*Template part for displaying contact page.
+*Template Name: contact Page
 *
 *@package Montessori School Theme
 */
@@ -23,5 +23,5 @@ get_header(); ?>
             </div>
         </article>
     </main>
-</div>
+     </div>
  <?php get_footer();?>

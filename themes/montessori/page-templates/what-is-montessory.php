@@ -2,7 +2,7 @@
 /**
 *Template Name: what is montessori Page
 *
-*@package Inhabitent Theme
+*@package Montessori Theme
 */
 
 get_header(); ?>

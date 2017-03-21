@@ -1,0 +1,76 @@
+.page-template-contact main.site-main {
+    width: 95%;
+    margin: 0 auto;
+}
+
+.entry-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 2px solid #2EB688;
+}
+
+.entry-title {
+text-transform: uppercase;
+margin-bottom: 0;
+font-size: 40px;
+}
+
+p.scroller {
+    font-size: 35px;
+    margin-bottom: 0;
+}
+
+p.in-touch {
+    font-size: 22px;
+}
+
+p.send-message {
+    font-size: 20px;
+}
+
+input.wpcf7-form-control {
+    width: 70%;
+    height: 45px;
+    
+}
+
+input.contact_number{
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    height: 45px;
+}
+
+select.contact_subject,
+select.contact_schools,
+select.contact_grade {
+    width: 70%;
+    height: 45px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    background-color: #fff
+}
+
+textarea.contact_message {
+    width: 70%;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    height: 15rem;
+}
+
+div.submit_form {  
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 70%;
+}
+
+input.wpcf7-submit {
+    width: 60%;
+    color:white;
+    background-color: #4FC8A1;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 5px; 
+    margin: 0 auto;
+}
