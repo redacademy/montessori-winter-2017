@@ -571,6 +571,17 @@ p,a { opacity: 0; transition: opacity 0.5s linear; }
          display:none;
      }
  }
+ .about-container{
+     margin-top:145px;
+     
+ }
+@media (min-width: 1240px){
+    .about-container{
+        margin-top:250px;
+        margin-right:5%;
+    }
+}
+
 .navigation-sub-menu{
     ul,a{
  list-style: none;
@@ -579,7 +590,7 @@ p,a { opacity: 0; transition: opacity 0.5s linear; }
  background: #248E6A;
  color:white;
  border-right: solid;
- font-size:24px;
+ font-size:20px;
  flex-wrap: wrap;
  padding-right: 15px;
  padding-left: 15px;
@@ -590,17 +601,17 @@ p,a { opacity: 0; transition: opacity 0.5s linear; }
     }
     
 }
-    // .navigation-sub-menu{
-    //     position:fixed;
-    //     top:1;
-    //     margin:0px;
-    //     width:100%;
-    // }
+    .navigation-sub-menu{
+        // position:fixed;
+        // width:100%;
+    }
 @media (min-width: 1240px){
     .navigation-sub-menu{
-  
+     position: fixed;
+     width: 100%;
     li{
         margin-right: 30px;
+        margin-top:100px;
     }
 }
 }
@@ -629,6 +640,149 @@ p,a { opacity: 0; transition: opacity 0.5s linear; }
         margin-right: 30%;
     }
 }
+
+h2,h1{
+    font-family: Asap, sans-serif;
+font-size: 36px;
+font-weight: normal;
+margin-left: 5%;
+}
+@media (min-width: 1240px){
+    h2,h1{
+        font-size:48px;
+    }
+}
+
+p{
+    margin-left:5%;
+    margin-right: 5%;
+    font-family: "Noto Sans";
+    font-size: 22px;
+}
+@media (min-width: 1240px){
+    p{
+        font-size:26px;
+    }
+}
+.about-quote{
+    width:70%;
+    margin-left:12%;
+    display:flex;
+}
+.red-line-quote{
+    width:20px;
+    height: 60px;
+    background-color: #D93B57;
+    margin-top:45px;
+    margin-right: 20px;
+}
+.about-quote-text{
+    text-align: left;
+   font-family: "Noto Sans";
+   font-size:24px;
+
+}
+@media (min-width: 1240px){
+    .about-quote-text{
+    font-size:28px;
+    }
+}
+
+.board-members{
+    ul{
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+    }
+    li:nth-child(1){
+        margin-right:10px;
+    }
+    li:nth-child(2){
+        width:130px;
+    }
+    li:nth-child(3){
+        width: 130px;
+    }
+    li:nth-child(4){
+        margin-right: 55px;
+        margin-left: 40px;
+    }
+
+}
+@media (min-width: 1240px){
+    .board-members{
+        ul{
+        margin-left: 125px;
+    }
+        li, li:nth-child(1){
+            margin-right: 55px;
+            margin-left: 40px;
+        }
+    }
+    
+}
+
+
+.about-job-title{
+    font-weight: bold;
+    font-family: "Noto Sans";
+    font-size: 22px;
+  
+}
+
+.members-at-large{
+    font-family: Asap;
+   font-size: 22px;
+   display: flex;
+   font-size: 32px;
+   margin-left: 5%;
+
+}
+
+
+.set-one,.set-two,.set-three{
+    font-size: 20px;
+    width:98px;
+    margin-left: 5%;
+    margin-right: 5%;
+    div{
+        margin-top:35%;
+    }
+}
+@media (min-width: 1240px){
+ 
+  .set-one,.set-two,.set-three{
+      display:flex;
+    width:100%;
+    font-weight: bold;
+    font-size:25px;
+    margin-left:0px;
+    margin-right:0px;
+    div{
+        //margin-right: 40px;
+        margin-top:10%;
+    padding-right: 70px;
+    margin-bottom: 40px;
+    }
+  }
+ 
+}
+.line2{
+  box-sizing: border-box;
+width: 410px;
+height: 2px;
+border: 2px solid #2EB688;  
+margin-left: 5%;
+margin-top:7%;
+}
+@media (min-width: 1240px) {
+      .line2 {
+   width: 1340px;
+   margin-top:3%;
+   
+       } 
+}
+
 }
 
 /*Footer*/
