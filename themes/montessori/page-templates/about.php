@@ -26,9 +26,9 @@ get_header(); ?>
                     </div>
 
                     <li><a href="#our-history-sub">Our History</a></li>
-                    <li><a href="#our-role">Our Role</a></li>
+                    <li><a href="#our-role-sub">Our Role</a></li>
                     <li><a href="#meetings">Meetings</a></li>
-                    <li><a href="#board-members">Board Members</a></li>
+                    <li><a href="#board-members-sub">Board Members</a></li>
                     <li><a href="#news-letter">Newsletter</a></li>
 
                 </ul>
@@ -37,7 +37,7 @@ get_header(); ?>
 
 
             <div class="about-container">
-                <section class="our-history">
+                <section class="our-history" id="our-history-sub">
 
                     <?php echo CFS()->get('text_and_quote');?>
                     <?php echo CFS()->get('title');?>
@@ -53,7 +53,7 @@ get_header(); ?>
                 </section>
                 <div class="line2"></div>
 
-                <section class="our-role">
+                <section class="our-role" id="our-role-sub">
 
                     <?php echo CFS()->get('secondary_text_and_quote');?>
                     <?php echo CFS()->get('secondary_title');?>
@@ -69,7 +69,7 @@ get_header(); ?>
                 </section>
             </div>
             <div class="line2"></div>
-            <section class="board-members">
+            <section class="board-members" id="board-members-sub">
                 <h2>Board Members</h2>
                 <ul>
                     <?php
@@ -126,11 +126,11 @@ get_header(); ?>
             </div>
             <!--members at large-->
             <div class="line2"></div>
-            <section class="meeting-minutes">
+            <section class="meeting-minutes" id="meetings">
                 <h2>Meeting Minutes</h2>
             </section>
             <div class="line2"></div>
-            <section class="newsletter">
+            <section class="newsletter" id="news-letter">
                 <h2>Newsletter</h2>
             </section>
             <div class="line2"></div>
