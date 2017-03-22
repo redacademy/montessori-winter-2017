@@ -36,7 +36,9 @@
 
 		<?php wp_footer(); ?>
 		<?php get_footer();?>
-		<script src="../../js/jquery-3.1.1.min.js"></script>
+	
+
+
 </div><!--footer-container-->
 	</body>
 </html>

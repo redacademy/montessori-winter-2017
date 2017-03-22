@@ -1213,6 +1213,14 @@ object {
   .content-about h3 {
     display: none; } }
 
+.content-about .about-container {
+  margin-top: 145px; }
+
+@media (min-width: 1240px) {
+  .content-about .about-container {
+    margin-top: 250px;
+    margin-right: 5%; } }
+
 .content-about .navigation-sub-menu ul, .content-about .navigation-sub-menu a {
   list-style: none;
   text-decoration: none;
@@ -1221,7 +1229,7 @@ object {
   background: #248E6A;
   color: white;
   border-right: solid;
-  font-size: 24px;
+  font-size: 20px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   padding-right: 15px;
@@ -1231,8 +1239,12 @@ object {
   padding-top: 8px; }
 
 @media (min-width: 1240px) {
-  .content-about .navigation-sub-menu li {
-    margin-right: 30px; } }
+  .content-about .navigation-sub-menu {
+    position: fixed;
+    width: 100%; }
+    .content-about .navigation-sub-menu li {
+      margin-right: 30px;
+      margin-top: 100px; } }
 
 .content-about .about-title {
   text-transform: uppercase;
@@ -1257,6 +1269,123 @@ object {
   .content-about .back {
     display: inline;
     margin-right: 30%; } }
+
+.content-about h2, .content-about h1 {
+  font-family: Asap, sans-serif;
+  font-size: 36px;
+  font-weight: normal;
+  margin-left: 5%; }
+
+@media (min-width: 1240px) {
+  .content-about h2, .content-about h1 {
+    font-size: 48px; } }
+
+.content-about p {
+  margin-left: 5%;
+  margin-right: 5%;
+  font-family: "Noto Sans";
+  font-size: 22px; }
+
+@media (min-width: 1240px) {
+  .content-about p {
+    font-size: 26px; } }
+
+.content-about .about-quote {
+  width: 70%;
+  margin-left: 12%;
+  display: -ms-flexbox;
+  display: flex; }
+
+.content-about .red-line-quote {
+  width: 20px;
+  height: 60px;
+  background-color: #D93B57;
+  margin-top: 45px;
+  margin-right: 20px; }
+
+.content-about .about-quote-text {
+  text-align: left;
+  font-family: "Noto Sans";
+  font-size: 24px; }
+
+@media (min-width: 1240px) {
+  .content-about .about-quote-text {
+    font-size: 28px; } }
+
+.content-about .board-members ul {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  list-style: none; }
+
+.content-about .board-members li:nth-child(1) {
+  margin-right: 10px; }
+
+.content-about .board-members li:nth-child(2) {
+  width: 130px; }
+
+.content-about .board-members li:nth-child(3) {
+  width: 130px; }
+
+.content-about .board-members li:nth-child(4) {
+  margin-right: 55px;
+  margin-left: 40px; }
+
+@media (min-width: 1240px) {
+  .content-about .board-members ul {
+    margin-left: 125px; }
+  .content-about .board-members li, .content-about .board-members li:nth-child(1) {
+    margin-right: 55px;
+    margin-left: 40px; } }
+
+.content-about .about-job-title {
+  font-weight: bold;
+  font-family: "Noto Sans";
+  font-size: 22px; }
+
+.content-about .members-at-large {
+  font-family: Asap;
+  font-size: 22px;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 32px;
+  margin-left: 5%; }
+
+.content-about .set-one, .content-about .set-two, .content-about .set-three {
+  font-size: 20px;
+  width: 98px;
+  margin-left: 5%;
+  margin-right: 5%; }
+  .content-about .set-one div, .content-about .set-two div, .content-about .set-three div {
+    margin-top: 35%; }
+
+@media (min-width: 1240px) {
+  .content-about .set-one, .content-about .set-two, .content-about .set-three {
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    font-weight: bold;
+    font-size: 25px;
+    margin-left: 0px;
+    margin-right: 0px; }
+    .content-about .set-one div, .content-about .set-two div, .content-about .set-three div {
+      margin-top: 10%;
+      padding-right: 70px;
+      margin-bottom: 40px; } }
+
+.content-about .line2 {
+  box-sizing: border-box;
+  width: 410px;
+  height: 2px;
+  border: 2px solid #2EB688;
+  margin-left: 5%;
+  margin-top: 7%; }
+
+@media (min-width: 1240px) {
+  .content-about .line2 {
+    width: 1340px;
+    margin-top: 3%; } }
 
 /*Footer*/
 .footer-container {
