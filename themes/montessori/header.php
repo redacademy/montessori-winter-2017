@@ -24,8 +24,7 @@
 			<header id="masthead" class="site-header" role="banner">
 				<div class="header-content">	
 					<div class="site-branding home-link-logo">
-						<h1 class="home-link-logo site-title screen-reader-text "><a class="home-link" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-						<p class="site-description"><?php bloginfo( 'description' ); ?></p>
+						<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><h1 class="site-title"><?php bloginfo( 'name' ); ?></h1></a>
 					</div><!-- .site-branding -->
 
 					<nav id="site-navigation" class="main-navigation" role="navigation">
