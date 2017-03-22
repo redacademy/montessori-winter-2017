@@ -2,7 +2,7 @@
 /**
 *Template Name: About Page
 *
-*@package Inhabitent Theme
+*@package  Theme
 */
 
 get_header(); ?>
