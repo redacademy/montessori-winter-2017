@@ -13,6 +13,7 @@ get_header(); ?>
                 <div>
                     <h3 class="about-title">
                         <?php echo the_title();?>
+                       
                     </h3>
                 </div>
                 <div>

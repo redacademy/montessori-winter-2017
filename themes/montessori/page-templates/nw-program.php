@@ -2,26 +2,29 @@
 /**
 *Template Name: nw program Page
 *
-*@package Inhabitent Theme
+*@package Montessori Theme
 */
 
 get_header(); ?>
 
-<div id="primary" class="content-about">
+<div id="primary" class="content-nw-program">
   <main id="main" class="site-main" role="main">
 
-      <section class="about-hero">
-      <header class="entry-header custom-header">
-      <h2 class=""><?php echo the_title();?></h2>
-      </header>
-      </section>
+    <div class="nw-container">
+  
+         
 
-      <div class="about-container">
-     <h2>Our Story</h2>
-     <!--<?php echo CFS()->get('about_our_story');?>-->
-     <h2>Our Team</h2>
-     <!--<?php echo CFS()->get('about_our_team');?>-->
+   
+<div class="hola">
+     <p>jsjdhdshdsadhadshkdsa</p></div>
      </div>
+<div class="test">
+<?php echo CFS()->get('main_text');?>
+
+                
+                    <?php echo CFS()->get('quote_text');?>
+
+</div>
          </main>
      </div>
  <?php get_footer();?>

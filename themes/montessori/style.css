@@ -492,7 +492,7 @@ button.menu-toggle {
   height: 0.37em;
   background: grey;
   border-radius: 5px;
-  box-shadow: 0 1em 0 0 grey, 0 2em 0 0 grey;
+  box-shadow: 0 1em 0 0 grey, 0 2em 0 0 grey;
   border: none; }
 
 @media screen and (min-width: 1120px) {
@@ -1386,6 +1386,14 @@ object {
   .content-about .line2 {
     width: 1340px;
     margin-top: 3%; } }
+
+.nw-container {
+  background-color: red;
+  width: 100%;
+  height: 700px; }
+
+.hola {
+  background-color: white; }
 
 /*Footer*/
 .footer-container {
