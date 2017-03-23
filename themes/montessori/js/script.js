@@ -3,5 +3,4 @@
         $(".main-navigation ul").toggleClass("active");
         console.log(this)
     })
-
 })(jQuery);
