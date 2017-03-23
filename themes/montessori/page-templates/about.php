@@ -13,7 +13,6 @@ get_header(); ?>
                 <div>
                     <h3 class="about-title">
                         <?php echo the_title();?>
-                       
                     </h3>
                 </div>
                 <div>
@@ -25,48 +24,42 @@ get_header(); ?>
                     <div class="back">
                         <li><a href="#back-top">Back to top</a></li>
                     </div>
-
                     <li><a href="#our-history-sub">Our History</a></li>
                     <li><a href="#our-role-sub">Our Role</a></li>
                     <li><a href="#meetings">Meetings</a></li>
                     <li><a href="#board-members-sub">Board Members</a></li>
                     <li><a href="#news-letter">Newsletter</a></li>
-
                 </ul>
             </div>
             <!--navigation-sub-menu-->
-
-
             <div class="about-container">
                 <section class="our-history" id="our-history-sub">
-
                     <?php echo CFS()->get('text_and_quote');?>
                     <?php echo CFS()->get('title');?>
                     <?php echo CFS()->get('main_text');?>
-
                     <div class="about-quote">
                         <div class="red-line-quote"></div>
                         <div class="about-quote-text">
-                    <?php echo CFS()->get('quote_text');?>
-                    </div><!--about-quote-text-->
-                    </div><!--about-quote-->
-
+                            <?php echo CFS()->get('quote_text');?>
+                        </div>
+                        <!--about-quote-text-->
+                    </div>
+                    <!--about-quote-->
                 </section>
                 <div class="line2"></div>
 
                 <section class="our-role" id="our-role-sub">
-
                     <?php echo CFS()->get('secondary_text_and_quote');?>
                     <?php echo CFS()->get('secondary_title');?>
                     <?php echo CFS()->get('secondary_text');?>
-
-<div class="about-quote">
+                    <div class="about-quote">
                         <div class="red-line-quote"></div>
                         <div class="about-quote-text">
-
-                    <?php echo CFS()->get('secondary_quote');?>
-                     </div><!--about-quote-text-->
-                    </div><!--about-quote-->
+                            <?php echo CFS()->get('secondary_quote');?>
+                        </div>
+                        <!--about-quote-text-->
+                    </div>
+                    <!--about-quote-->
                 </section>
             </div>
             <div class="line2"></div>
@@ -89,14 +82,6 @@ get_header(); ?>
                         <?php endforeach; ?>
                         <?php endif; ?>
                 </ul>
-
-
-
-                <!--<?php echo CFS()->get('	board_members_title');?>
-                <?php echo CFS()->get('	board_member_picture');?>
-                <?php echo CFS()->get('	board_member_name');?>
-                <?php echo CFS()->get('board_member_job_title');?>-->
-
             </section>
             <h2>Members at Large</h2>
             <div class="members-at-large">
@@ -127,9 +112,55 @@ get_header(); ?>
             </div>
             <!--members at large-->
             <div class="line2"></div>
+
             <section class="meeting-minutes" id="meetings">
-                <h2>Meeting Minutes</h2>
+                <?php 
+                // the query
+                $args = array(
+                    'post_type' => 'meeting_minutes',
+                     'posts_per_page' => 1,
+                      'orderby' => 'date',  
+                   
+                );
+                $the_query = new WP_Query( $args ); ?>
+
+                <?php if ( $the_query->have_posts() ) : ?>
+  
+                    <!-- pagination here -->
+
+                    <!-- the loop -->
+                    <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+                        <h2><?php the_title(); ?></h2>
+                        <?php the_date('m-d-Y', '<h2>', '</h2>'); ?>
+<?php
+ $fields = CFS()->get('loop_points'); // returns an array of posts
+                        if(!empty($fields)):
+                            foreach ( $fields as $field ):?>
+                        
+                                <?php echo $field['meeting_points']; ?>
+                          
+                        <?php endforeach; ?>
+                        <?php endif; ?>
+ <img src="<?php echo CFS()->get( 'metting_image' );?>" 
+                                        <?php //var_dump($field['metting_image']); ?>
+                                           <p><img src="" /></p>
+     
+
+                    <?php endwhile; ?>
+                    <!-- end of the loop -->
+
+                    <!-- pagination here -->
+                    
+
+                    <?php wp_reset_postdata(); ?>
+   
+                <?php endif; ?>
+		
+        
+                 
             </section>
+
+
             <div class="line2"></div>
             <section class="newsletter" id="news-letter">
                 <h2>Newsletter</h2>
