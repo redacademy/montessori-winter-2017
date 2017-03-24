@@ -782,7 +782,46 @@ margin-top:7%;
    
        } 
 }
+.about-meeting{
 
+}
+@media (min-width: 1240px){
+.about-meeting{
+    display:flex;
+    margin-left: 5%;
+}
+}
+.minute-list{
+    width:55%;
+    margin-left: 5%;
+    ul{
+        list-style: none;
+        text-align: left;
+        padding-left: 0px;
+       
+    }
+    label{
+        line-height: 40px;
+    }
+   
+}
+.minute-image{
+    margin-left: 7%;
+}
+@media (min-width: 1240px){
+    .minute-image{
+ img{
+       margin-right: 380px;
+   margin-top:45px;
+ }
+    
+    }
+}
+.minute-date{
+    h2{
+    font-size: 25px;
+}
+}
 }
 
 ////*nw-program*////
@@ -865,7 +904,7 @@ margin-top:7%;
     }
 }
 .nw-container{
-    background-color: red;
+   // background-color: red;
   
 }
 

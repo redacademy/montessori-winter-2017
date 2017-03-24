@@ -12,7 +12,7 @@ get_header(); ?>
             <div class="nw-and-back">
                 <div>
                     <h3 class="nw-title">
-                        <?php echo the_title();?>
+                       <?php echo the_title();?>
                     </h3>
                 </div>
                 <div>
@@ -33,6 +33,15 @@ get_header(); ?>
             <!--navigation-sub-menu-->
             <div class="nw-container">
                 <section class="why-montessori">
+         
+               <?php echo CFS()->get('why_montessori_title');?>
+                      <?php echo CFS()->get('why_montessori_text');?>
+                    <img src="<?php echo CFS()->get('why_montessori_picture');?>">
+                    <?php echo CFS()->get('why_montessori_quote');?>
+                     
+                     
+                     
+                      
                     <div class="daily-schedule">
                         <div class="morning-schedule"></div>
                         <div class="afternoon-schedule"></div>
@@ -65,10 +74,7 @@ get_header(); ?>
                     </div>
                 </section>
 
-                <div class="test">
-                    <?php echo CFS()->get('main_text');?>
-                    <?php echo CFS()->get('quote_text');?>
-                </div>
+                
         </main>
         </div>
         <?php get_footer();?>

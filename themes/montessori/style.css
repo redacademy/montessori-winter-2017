@@ -1387,6 +1387,33 @@ object {
     margin-top: 3%; } }
 
 @media (min-width: 1240px) {
+  .content-about .about-meeting {
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: 5%; } }
+
+.content-about .minute-list {
+  width: 55%;
+  margin-left: 5%; }
+  .content-about .minute-list ul {
+    list-style: none;
+    text-align: left;
+    padding-left: 0px; }
+  .content-about .minute-list label {
+    line-height: 40px; }
+
+.content-about .minute-image {
+  margin-left: 7%; }
+
+@media (min-width: 1240px) {
+  .content-about .minute-image img {
+    margin-right: 380px;
+    margin-top: 45px; } }
+
+.content-about .minute-date h2 {
+  font-size: 25px; }
+
+@media (min-width: 1240px) {
   .content-nw-program h3 {
     display: none; } }
 
@@ -1441,9 +1468,6 @@ object {
   .back {
     display: inline;
     margin-right: 30%; } }
-
-.nw-container {
-  background-color: red; }
 
 /*Footer*/
 .footer-container {

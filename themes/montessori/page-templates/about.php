@@ -114,7 +114,9 @@ get_header(); ?>
             <div class="line2"></div>
 
             <section class="meeting-minutes" id="meetings">
-                <?php 
+                <div class="about-meeting">
+                    <div class="minute-list">
+                        <?php 
                 // the query
                 $args = array(
                     'post_type' => 'meeting_minutes',
@@ -124,40 +126,65 @@ get_header(); ?>
                 );
                 $the_query = new WP_Query( $args ); ?>
 
-                <?php if ( $the_query->have_posts() ) : ?>
-  
-                    <!-- pagination here -->
+                        <?php if ( $the_query->have_posts() ) : ?>
 
-                    <!-- the loop -->
-                    <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
-                        <h2><?php the_title(); ?></h2>
+                        <!-- pagination here -->
+
+                        <!-- the loop -->
+                        <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+                        <h2>
+                            <?php the_title(); ?>
+                        </h2>
+                        <div class="minute-date">
                         <?php the_date('m-d-Y', '<h2>', '</h2>'); ?>
-<?php
+                        </div>
+                        <?php
  $fields = CFS()->get('loop_points'); // returns an array of posts
                         if(!empty($fields)):
                             foreach ( $fields as $field ):?>
-                        
+
+                            <ul>
+                                <li>
+                                    <div class="wrapper">
+
+
+
+                                        <section>
+                                            <label>
+                           <input type="checkbox" />
                                 <?php echo $field['meeting_points']; ?>
-                          
-                        <?php endforeach; ?>
+
+                                           </label>
+                                        </section>
+
+                                    </div>
+
+                                </li>
+
+                                <?php endforeach; ?>
+                                <?php endif; ?>
+                    </div>
+                    <!--minute-list-->
+                    </ul>
+                    <div class="minute-image">
+                        <img src="<?php echo CFS()->get( 'metting_image' );?>" </div>
+                        <!--minute-image-->
+
+
+
+                        <?php endwhile; ?>
+                        <!-- end of the loop -->
+
+                        <!-- pagination here -->
+
+
+                        <?php wp_reset_postdata(); ?>
+
                         <?php endif; ?>
- <img src="<?php echo CFS()->get( 'metting_image' );?>" 
-                                        <?php //var_dump($field['metting_image']); ?>
-                                           <p><img src="" /></p>
-     
 
-                    <?php endwhile; ?>
-                    <!-- end of the loop -->
+                    </div>
+                    <!--about meeting-->
 
-                    <!-- pagination here -->
-                    
-
-                    <?php wp_reset_postdata(); ?>
-   
-                <?php endif; ?>
-		
-        
-                 
             </section>
 
 
@@ -170,5 +197,5 @@ get_header(); ?>
                 <h2>Archives</h2>
             </section>
         </main>
-    </div>
-    <?php get_footer();?>
+        </div>
+        <?php get_footer();?>
