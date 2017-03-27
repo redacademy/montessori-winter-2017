@@ -389,7 +389,8 @@ textarea {
   width: 100%;
   margin: 0 auto;
   height: 100px;
-  border-bottom: solid 1px #999999; }
+  border-bottom: solid 1px #999999;
+  padding-bottom: 100px; }
 
 .header-content {
   display: -ms-flexbox;
@@ -492,17 +493,17 @@ button.menu-toggle {
   height: 0.37em;
   background: grey;
   border-radius: 5px;
-  box-shadow: 0 1em 0 0 grey, 0 2em 0 0 grey;
+  box-shadow: 0 1em 0 0 grey, 0 2em 0 0 grey;
   border: none; }
 
-@media screen and (min-width: 1120px) {
+@media screen and (min-width: 1240px) {
   .site-header {
     position: fixed;
     background-color: white;
     z-index: 100; }
   .main-navigation ul {
     height: 30px;
-    width: 78%;
+    max-width: 72%;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: row;
@@ -1918,6 +1919,7 @@ h2 {
       visibility: visible; } }
 
 .page-template-contact main.site-main {
+  padding-top: 100px;
   width: 95%;
   margin: 0 auto; }
 
@@ -2001,6 +2003,7 @@ img.fb_img {
   margin-right: 3rem; }
 
 .page-template-what-is-montessori main.site-main {
+  padding-top: 100px;
   width: 95%;
   margin: 0 auto; }
 
@@ -2024,3 +2027,44 @@ p.scroller {
 
 p {
   font-size: 22px; }
+
+div.blocks-container {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around; }
+
+div.philosophy-blocks {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  padding: 2rem 0;
+  width: 40%;
+  background-color: #AFF1D3;
+  margin: 2rem 15px;
+  -ms-flex-align: center;
+      align-items: center; }
+
+img.block-image {
+  width: 127px;
+  height: 100%; }
+
+p.block-title {
+  text-decoration: none;
+  font-family: "Noto Sans";
+  font-size: 22px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 27px;
+  color: #248E6A;
+  margin-top: 0;
+  margin-bottom: 0; }
+
+.benefits-list li {
+  font-size: 22px;
+  margin: 2.5rem 0; }
