@@ -26,13 +26,13 @@ get_header(); ?>
                     </div>
                     <li><a href="#nw-program-sub">NW Program</a></li>
                     <li><a href="#funding-sub">Funding</a></li>
-                    <li><a href="#Schools-sub">Schools and Teachers</a></li>
+                    <li><a href="#schools-sub">Schools and Teachers</a></li>
                     <li><a href="#how-to-sub">How to Enroll</a></li>
                 </ul>
             </div>
             <!--navigation-sub-menu-->
             <div class="nw-container">
-                <section class="why-montessori">
+                <section class="why-montessori" id="nw-program-sub">
                     <div class="nw-why-montessori-title">
                         <?php echo CFS()->get('why_montessori_title');?>
                     </div>
@@ -104,7 +104,7 @@ get_header(); ?>
                     <!--daily-schedule-->
                 </section>
                 <div class="nw-line2"></div>
-                <section class="nw-funding">
+                <section class="nw-funding" id="funding-sub">
                     <div class="nw-funding-title">
                         <?php echo CFS()->get('funding_title');?>
                     </div>
@@ -141,7 +141,7 @@ get_header(); ?>
                     <a href="#" class="donate-now">Donate Now</a>
                 </section>
      <div class="nw-line2"></div>
-                <section class="school-and-teachers">
+                <section class="school-and-teachers" id="schools-sub">
                     <div class="schools-and-teachers-title">
                         <?php echo CFS()->get('schools_and_teachers_title');?>
                     </div>
@@ -212,7 +212,7 @@ get_header(); ?>
                     </div>
                 </section>
                 <div class="nw-line2"></div>
-                <section class="how-to-enroll">
+                <section class="how-to-enroll" id="how-to-sub">
                     <div class="nw-how-to-enroll-title">
                         <?php echo CFS()->get('how_to_enroll_title');?>
                     </div>

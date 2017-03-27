@@ -8,6 +8,9 @@
 h2{
     margin-left: 5%;
 }
+.hero{
+    padding-top: 100px;
+}
  .main-picture {
 	background: url("../../images/header-pic2.jpg")  100%, linear-gradient( rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) );
 	//width:480px;
@@ -33,7 +36,7 @@ color:white;
 @media (min-width: 1240px) {
       .welcome-text {
       background-size: 100% auto;
-      height: 582px;
+      height: 650px;
       width:550px;
       position:absolute;
       top:100px;
