@@ -36,10 +36,12 @@ get_header(); ?>
                     <div class="nw-why-montessori-title">
                         <?php echo CFS()->get('why_montessori_title');?>
                     </div>
-                    <div class="nw-montessori-text">
-                        <?php echo CFS()->get('why_montessori_text');?>
+                    <div class="nw-text-and-picture">
+                        <div class="nw-montessori-text">
+                            <?php echo CFS()->get('why_montessori_text');?>
+                        </div>
+                        <img src="<?php echo CFS()->get('why_montessori_picture');?>">
                     </div>
-                    <img src="<?php echo CFS()->get('why_montessori_picture');?>">
                     <div class="nw-quote">
                         <div class="red-line-quote"></div>
                         <div class="nw-quote-text">
@@ -53,109 +55,128 @@ get_header(); ?>
                         <div class="daily-title">
                             <?php echo CFS()->get('daily_schedule_title');?>
                         </div>
-                        <div class="morning-schedule-title">
-                            <?php echo CFS()->get('morning_schedule_title');?>
-                        </div>
-                        <div class="first-morning">
-                            <ul>
-                                <li>
-                                    <?php echo CFS()->get('first_morning_schedule');?>
-                                </li>
-                                <li>
-                                    <?php echo CFS()->get('second_morning_schedule');?>
-                                </li>
-                                <li>
-                                    <?php echo CFS()->get('third_morning_schedule');?>
-                                </li>
-                                <li>
-                                    <?php echo CFS()->get('fourth_morning_schedule');?>
-                                </li>
-                            </ul>
-                        </div>
+                        <div class="test">
+                        <div class="schedules">
+                            <div class="morning-schedule-title">
+                                <?php echo CFS()->get('morning_schedule_title');?>
+                            </div>
 
-                        <div class="afternoon-schedule">
-                            <?php echo CFS()->get('afternoon_schedule_title');?>
+                            <div class="first-morning">
+                                <ul>
+                                    <li>
+                                        <?php echo CFS()->get('first_morning_schedule');?>
+                                    </li>
+                                    <li>
+                                        <?php echo CFS()->get('second_morning_schedule');?>
+                                    </li>
+                                    <li>
+                                        <?php echo CFS()->get('third_morning_schedule');?>
+                                    </li>
+                                    <li>
+                                        <?php echo CFS()->get('fourth_morning_schedule');?>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
-                        <div class="first-afternoon">
-                            <ul>
-                                <li>
-                        <?php echo CFS()->get('first_montessori_afternoon_schedule');?>
-                        </li>
-                        <li>
-                        <?php echo CFS()->get('second_afternoon_schedule');?>
-                        </li>
-                        <li>
-                        <?php echo CFS()->get('third_afternoon_schedule');?>
-                        </li>
-                        <li>
-                        <?php echo CFS()->get('fourth_afternoon_schedule');?>
-                        </li>
-                        </ul>
+                        <div class="afternoon-sch">
+                            <div class="afternoon-schedule">
+                                <?php echo CFS()->get('afternoon_schedule_title');?>
+                            </div>
+                            <div class="first-afternoon">
+                                <ul>
+                                    <li>
+                                        <?php echo CFS()->get('first_montessori_afternoon_schedule');?>
+                                    </li>
+                                    <li>
+                                        <?php echo CFS()->get('second_afternoon_schedule');?>
+                                    </li>
+                                    <li>
+                                        <?php echo CFS()->get('third_afternoon_schedule');?>
+                                    </li>
+                                    <li>
+                                        <?php echo CFS()->get('fourth_afternoon_schedule');?>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        </div>
                     </div>
                     <!--daily-schedule-->
                 </section>
-           <div class="nw-line2"></div>
+                <div class="nw-line2"></div>
                 <section class="nw-funding">
                     <div class="nw-funding-title">
-                    <?php echo CFS()->get('funding_title');?>
+                        <?php echo CFS()->get('funding_title');?>
                     </div>
                     <div class="where-is-coming-from">
                         <?php echo CFS()->get('funding_sub_title');?>
-                        </div>
-                        <div class="funding-first-text">
+                    </div>
+                    <div class="funding-first-text">
                         <?php echo CFS()->get('funding_first_text');?>
-                        </div>
-                        <div class="funding-first-quote">
-                            <div class="red-line-quote"></div>
+                    </div>
+                    <div class="funding-quote-picture">
+                    <div class="funding-first-quote">
+                        <div class="red-line-quote"></div>
                         <div class="funding-quote-text">
-                        <?php echo CFS()->get('funding_quote');?>
+                            <?php echo CFS()->get('funding_quote');?>
                         </div>
-                        </div>
-                        <img src="<?php echo CFS()->get('funding_picture');?>">
-                        <div class="funding-second-text">
+                    </div>
+                    <img src="<?php echo CFS()->get('funding_picture');?>">
+                    </div>
+                    <div class="funding-second-text">
                         <?php echo CFS()->get('second_funding_text');?>
-                        </div>
-                    
+                    </div>
+
                     <div class="how-money">
                         <div class="how-money-title">
-                        <?php echo CFS()->get('how_money_is_spent_title');?>
+                            <?php echo CFS()->get('how_money_is_spent_title');?>
                         </div>
+                        <div class="how-money-picture-and-text">
                         <img src="<?php echo CFS()->get('how_money_picture');?>">
                         <div class="how-money-text">
-                        <?php echo CFS()->get('how_money_is_spent_text');?>
+                            <?php echo CFS()->get('how_money_is_spent_text');?>
+                        </div>
                         </div>
                     </div>
-                     <a href="#" class="donate-now">Donate Now</a>
+                    <a href="#" class="donate-now">Donate Now</a>
                 </section>
-
+     <div class="nw-line2"></div>
                 <section class="school-and-teachers">
                     <div class="schools-and-teachers-title">
-                    <?php echo CFS()->get('schools_and_teachers_title');?>
+                        <?php echo CFS()->get('schools_and_teachers_title');?>
                     </div>
                     <div class="schools-and-teachers-sub">
-                    <?php echo CFS()->get('schools_and_teachers_sub_title');?>
+                        <?php echo CFS()->get('schools_and_teachers_sub_title');?>
                     </div>
+                    <div class="schools-text-and-picture">
+                        <div class="school-text-and-address">
                     <div class="schools-text">
-                    <?php echo CFS()->get('schools_and_teachers_text');?>
+                        <?php echo CFS()->get('schools_and_teachers_text');?>
                     </div>
                     <div class="school-address">
-                    <?php echo CFS()->get('schools_and_teachers_address');?>
-                    <?php echo CFS()->get('schools_and_teachers_phone');?>
+                        <?php echo CFS()->get('schools_and_teachers_address');?>
+                       <div> <?php echo CFS()->get('schools_and_teachers_phone');?></div>
+                    </div>
                     </div>
                     <img src="<?php echo CFS()->get('first_school_picture');?>">
-
-<div class="second-school-title">
-                    <?php echo CFS()->get('second_school');?>
                     </div>
+
+                    <div class="second-school-title">
+                        <?php echo CFS()->get('second_school');?>
+                    </div>
+                    <div class="second-school-text-and-picture">
+                        <div class="second-school-text-address">
                     <div class="second-school-text">
-                    <?php echo CFS()->get('second_school_text');?>
+                        <?php echo CFS()->get('second_school_text');?>
                     </div>
                     <div class="school-address">
-                    <?php echo CFS()->get('second_school_address');?>
-                    <?php echo CFS()->get('second_school_phone');?>
+                        <?php echo CFS()->get('second_school_address');?>
+                      <div>  <?php echo CFS()->get('second_school_phone');?></div>
+                    </div>
                     </div>
                     <img src="<?php echo CFS()->get('second_school_picture');?>">
-
+</div>
+<div class="nw-line2"></div>
                     <div class="nw-teachers">
 
                         <h2>Teachers</h2>
@@ -168,10 +189,10 @@ get_header(); ?>
                                     <p><img src="<?php echo $field['teachers_picture']; ?>" /></p>
                                     <p>
                                         <?php echo $field['teachers_name']; ?>
-</p>
-   <p class="nw-grade">
+                                    </p>
+                                    <p class="nw-grade">
                                         <?php echo $field['teachers_teaching_grade']; ?>
-</p>
+                                    </p>
                                 </li>
                                 <?php endforeach; ?>
                                 <?php endif; ?>
@@ -179,46 +200,47 @@ get_header(); ?>
 
 
                     </div>
-                      <div class="nw-line2"></div>
+                    <div class="nw-line2"></div>
                     <div class="list-of-schools">
                         <div class="private-schools-title">
-                        <?php echo CFS()->get('list_of_private_schools_title');?>
+                            <?php echo CFS()->get('list_of_private_schools_title');?>
                         </div>
                         <p class="nw-list-of-schools">
-                        
-                        <?php echo CFS()->get('list_of_schools');?>
+
+                            <?php echo CFS()->get('list_of_schools');?>
                         </p>
                     </div>
                 </section>
- <div class="nw-line2"></div>
+                <div class="nw-line2"></div>
                 <section class="how-to-enroll">
                     <div class="nw-how-to-enroll-title">
-                    <?php echo CFS()->get('how_to_enroll_title');?>
+                        <?php echo CFS()->get('how_to_enroll_title');?>
                     </div>
-                      <div class="how-to-enroll-quote">
-                            <div class="red-line-quote"></div>
+                    <div class="how-to-enroll-quote">
+                        <div class="red-line-quote"></div>
                         <div class="how-to-enroll-quote-text">
-                    <?php echo CFS()->get('how_to_enroll_quote');?>
-                    </div>
+                            <?php echo CFS()->get('how_to_enroll_quote');?>
+                        </div>
                     </div>
                     <div class="how-to-enroll-sub-title">
-                    <?php echo CFS()->get('how_to_enroll_first_subtitle');?>
+                        <?php echo CFS()->get('how_to_enroll_first_subtitle');?>
                     </div>
                     <p class="how-to-text">
-                    <?php echo CFS()->get('how_to_enroll_first_text');?>
+                        <?php echo CFS()->get('how_to_enroll_first_text');?>
                     </p>
                     <p class="how-apply-sub-title">
-                    <?php echo CFS()->get('how_to_apply_sub_title');?>
+                        <?php echo CFS()->get('how_to_apply_sub_title');?>
                     </p>
-                    <p class="how-to-text-area">
-                    <?php echo CFS()->get('how_to_apply_text_area');?>
-                    </p>
+                    <div class="how-to-list-and-picture">
+                    <div class="how-to-text-area">
+                        <?php echo CFS()->get('how_to_apply_text_area');?>
+                    </div>
+                    <div class="picture-and-button">
                     <img src="<?php echo CFS()->get('how_to_apply_picture');?>">
-
-                    <div class="when-start">
-                    </div>
-                    <div class="how-apply">
-                    </div>
+                     <a href="#" class="official-school">Official School Board Website</a>
+                     </div>
+</div>
+                   
                 </section>
 
 

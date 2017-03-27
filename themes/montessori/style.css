@@ -1483,12 +1483,16 @@ object {
   .nw-container {
     margin-top: 250px; } }
 
-.nw-why-montessori-title, .private-schools-title, .nw-how-to-enroll-title {
+.nw-why-montessori-title, .private-schools-title, .nw-how-to-enroll-title, .nw-funding-title {
   text-align: left;
   font-size: 36px;
   font-family: Asap;
   line-height: 42px;
   margin-top: 5%; }
+
+@media (min-width: 1240px) {
+  .nw-why-montessori-title, .private-schools-title, .nw-how-to-enroll-title, .nw-funding-title {
+    font-size: 55px; } }
 
 .nw-montessori-text, .funding-first-text, .funding-second-text, .how-money-text, .schools-text, .second-school-text {
   font-family: "Noto Sans";
@@ -1497,8 +1501,37 @@ object {
   margin-top: 5%;
   margin-bottom: 7%; }
 
+@media (min-width: 1240px) {
+  .nw-montessori-text, .funding-first-text, .funding-second-text, .how-money-text, .schools-text, .second-school-text {
+    font-size: 25px;
+    margin-bottom: 3%; } }
+
+@media (min-width: 1240px) {
+  .funding-second-text {
+    margin-top: 0px; } }
+
+@media (min-width: 1240px) {
+  .how-money-text {
+    margin-bottom: 0px;
+    margin-top: 50px; } }
+
+.nw-text-and-picture {
+  text-decoration: none; }
+
+@media (min-width: 1240px) {
+  .nw-text-and-picture {
+    display: -ms-flexbox;
+    display: flex; } }
+
 .why-montessori img, .nw-funding img {
   margin-left: 5%; }
+
+@media (min-width: 1240px) {
+  .why-montessori img {
+    margin-left: 5%;
+    height: 350px;
+    margin-top: 6%;
+    width: 100%; } }
 
 .nw-quote, .funding-first-quote, .how-to-enroll-quote {
   width: 75%;
@@ -1513,6 +1546,11 @@ object {
   margin-top: 45px;
   margin-right: 20px; }
 
+@media (min-width: 1240px) {
+  .red-line-quote {
+    width: 20px;
+    margin-top: 5px; } }
+
 .nw-quote-text, .funding-quote-text, .how-to-enroll-quote-text, .how-to-text, .how-to-text-area {
   text-align: left;
   font-family: "Noto Sans";
@@ -1520,13 +1558,34 @@ object {
   margin-top: 10%; }
 
 @media (min-width: 1240px) {
-  .about-quote-text {
+  .nw-quote-text, .funding-quote-text, .how-to-enroll-quote-text, .how-to-text, .how-to-text-area {
     font-size: 28px; } }
 
-.daily-title, .nw-funding-title, .schools-and-teachers-title {
+@media (min-width: 1240px) {
+  .nw-quote-text, .funding-quote-text, .how-to-enroll-quote-text, .how-to-text, .how-to-text-area {
+    margin-top: 0px; } }
+
+@media (min-width: 1240px) {
+  .funding-quote-picture {
+    display: -ms-flexbox;
+    display: flex; }
+    .funding-quote-picture img {
+      width: 384px;
+      height: 210px; } }
+
+.daily-title, .schools-and-teachers-title {
   font-family: Asap;
   font-size: 30px;
   margin-top: 5%; }
+
+@media (min-width: 1240px) {
+  .daily-title, .schools-and-teachers-title {
+    font-size: 40px; } }
+
+@media (min-width: 1240px) {
+  .test {
+    display: -ms-flexbox;
+    display: flex; } }
 
 .morning-schedule-title, .afternoon-schedule {
   font-family: "Noto Sans";
@@ -1535,12 +1594,28 @@ object {
   margin-top: 5%;
   background-color: #4FC8A1; }
 
+@media (min-width: 1240px) {
+  .morning-schedule-title, .afternoon-schedule {
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 8%;
+    background-color: white; } }
+
+@media (min-width: 1240px) {
+  .schedules {
+    margin-right: 25%; } }
+
 .first-morning, .first-afternoon {
   font-family: "Noto Sans";
   font-size: 20px;
   line-height: 30px; }
   .first-morning ul, .first-afternoon ul {
     list-style: none; }
+
+@media (min-width: 1240px) {
+  .first-morning, .first-afternoon {
+    font-size: 30px;
+    line-height: 40px; } }
 
 .nw-line2 {
   box-sizing: border-box;
@@ -1560,12 +1635,32 @@ object {
   font-size: 24px;
   margin-top: 10%; }
 
+@media (min-width: 1240px) {
+  .where-is-coming-from, .how-apply-sub-title, .how-money-title, .schools-and-teachers-sub, .second-school-title, .how-to-enroll-sub-title {
+    font-size: 35px;
+    margin-top: 3%; } }
+
+@media (min-width: 1240px) {
+  .funding-first-text {
+    margin-top: 0%; } }
+
 .funding-quote-text {
   margin-bottom: 10%; }
 
 .how-money img {
   margin-left: 7%;
   margin-top: 10%; }
+
+@media (min-width: 1240px) {
+  .how-money img {
+    margin-left: 2%;
+    margin-top: 3%;
+    margin-right: 5%; } }
+
+@media (min-width: 1240px) {
+  .how-money-picture-and-text {
+    display: -ms-flexbox;
+    display: flex; } }
 
 .donate-now {
   border-radius: 6px;
@@ -1581,17 +1676,42 @@ object {
   text-align: center;
   margin-left: 25%; }
 
+@media (min-width: 1240px) {
+  .donate-now {
+    margin-left: 75%;
+    width: 300px;
+    margin-top: 4%;
+    padding: 20px 1px; } }
+
 .donate-now {
   background-color: #4FC8A1; }
+
+@media (min-width: 1240px) {
+  .schools-text-and-picture, .second-school-text-and-picture {
+    display: -ms-flexbox;
+    display: flex;
+    width: 1367px;
+    height: 330px; } }
 
 .school-address {
   font-family: "Noto Sans";
   font-size: 16px; }
 
+@media (min-width: 1240px) {
+  .school-address {
+    font-size: 26px; } }
+
 .school-and-teachers img {
   margin-left: 6%;
   margin-top: 10%;
-  margin-bottom: 10%; }
+  margin-bottom: 0%; }
+
+@media (min-width: 1240px) {
+  .school-and-teachers img {
+    margin-top: 4%;
+    margin-bottom: 2%; }
+  .school-and-teachers .nw-line2 {
+    margin-top: 5%; } }
 
 h2 {
   font-family: Asap;
@@ -1605,13 +1725,14 @@ h2 {
   list-style: none; }
 
 .nw-teachers li:nth-child(1) {
-  margin-right: 10px; }
+  margin-right: 70px; }
 
 .nw-teachers li:nth-child(2) {
   width: 130px; }
 
 .nw-teachers li:nth-child(3) {
-  width: 130px; }
+  width: 130px;
+  margin-right: 30px; }
 
 .nw-teachers li:nth-child(4) {
   margin-right: 55px;
@@ -1619,7 +1740,7 @@ h2 {
 
 @media (min-width: 1240px) {
   .nw-teachers ul {
-    margin-left: 125px; }
+    margin-left: 100px; }
   .nw-teachers li, .nw-teachers li:nth-child(1) {
     margin-right: 55px;
     margin-left: 40px; } }
@@ -1634,12 +1755,65 @@ h2 {
   font-size: 20px;
   line-height: 45px; }
 
+@media (min-width: 1240px) {
+  .nw-list-of-schools {
+    margin-top: 5%; } }
+
 .how-to-text-area {
   line-height: 45px; }
 
 .how-to-enroll img {
   margin-left: 7%;
   margin-bottom: 10%; }
+
+@media (min-width: 1240px) {
+  .how-to-enroll img {
+    width: 100%; } }
+
+@media (min-width: 1240px) {
+  .how-to-enroll-quote {
+    margin-top: 5%; }
+    .how-to-enroll-quote .red-line-quote {
+      height: 190px; } }
+
+@media (min-width: 1240px) {
+  .how-to-list-and-picture {
+    display: -ms-flexbox;
+    display: flex; } }
+
+@media (min-width: 1240px) {
+  .how-to-text-area {
+    line-height: 65px; } }
+
+.official-school {
+  border-radius: 6px;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-size: 25px;
+  font-weight: bold;
+  text-decoration: none;
+  width: 380px;
+  padding: 10px 1px;
+  font-family: "Noto Sans";
+  text-align: center;
+  margin-left: 6%;
+  margin-bottom: 7%; }
+
+@media (min-width: 1240px) {
+  .official-school {
+    margin-left: 7%;
+    width: 400px;
+    margin-top: 4%;
+    padding: 20px 1px; } }
+
+@media (min-width: 1240px) {
+  .picture-and-button img {
+    width: 100%;
+    height: 400px; } }
+
+.official-school {
+  background-color: #4FC8A1; }
 
 /*Footer*/
 .footer-container {
