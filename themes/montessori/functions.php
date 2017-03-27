@@ -109,22 +109,16 @@ require get_template_directory() . '/inc/extras.php';
 // 	wp_enqueue_style( 'font-awesome', '//maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css' );
 // }
 
-// custom post type meeting minutes//
-// function create_post_type() {
-//   register_post_type( 'acme_product',
-//     array(
-//       'labels' => array(
-//         'name' => __( 'Products' ),
-//         'singular_name' => __( 'Product' )
-//       ),
-//       'public' => true,
-//       'has_archive' => true,
-//     )
-//   );
-// }
-// add_action( 'init', 'create_post_type' );
 
-// highlights submenu button//
-// $('navigation-sub-menu').click(function() {
-//     $(this).effect( "highlight", {color: 'red'}, 3000 );
-// });
+function sub_menu($menu){
+ echo '<div class="navigation-sub-menu">';
+    echo '<ul>';
+	 echo '<div class="back">';
+        echo '<li><a href="#back-top">Back to top</a></li>';
+     echo "</div>";
+		foreach($menu as $menu_item){
+			echo "<li><a href='#{$menu_item[0]}'>{$menu_item[1]}</a></li>";
+		}              
+    echo "</ul>";
+echo '</div>';
+}

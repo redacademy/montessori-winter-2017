@@ -19,7 +19,9 @@ get_header(); ?>
                     <h3 class="about-back"><a href="#back-to-top">Back to top</a></h3>
                 </div>
             </div>
-            <div class="navigation-sub-menu">
+
+
+            <!--<div class="navigation-sub-menu">
                 <ul>
                     <div class="back">
                         <li><a href="#back-top">Back to top</a></li>
@@ -30,7 +32,14 @@ get_header(); ?>
                     <li><a href="#board-members-sub">Board Members</a></li>
                     <li><a href="#news-letter">Newsletter</a></li>
                 </ul>
-            </div>
+            </div>-->
+            <?php 
+            $menu = array(array('our-history-sub', 'Our History'), array('our-role-sub', 'Our Role'), array('meetings', 'Meetings'), array('board-members-sub', 'Board Members'),array('news-letter', 'Newsletter'));
+            sub_menu($menu); 
+            ?>
+
+
+
             <!--navigation-sub-menu-->
             <div class="about-container">
                 <section class="our-history" id="our-history-sub">
