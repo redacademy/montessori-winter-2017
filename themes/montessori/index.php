@@ -1,3 +1,4 @@
+<h1>INDEX.PHP</h1>
 <?php
 /**
  * The main template file.

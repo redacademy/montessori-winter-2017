@@ -19,25 +19,10 @@ get_header(); ?>
                     <h3 class="nw-back"><a href="#back-to-top">Back to top</a></h3>
                 </div>
             </div>
-            <!--<div class="nw-navigation-sub-menu">
-                <ul>
-                    <div class="back">
-                        <li><a href="#back-top">Back to top</a></li>
-                    </div>
-                    <li><a href="#nw-program-sub">NW Program</a></li>
-                    <li><a href="#funding-sub">Funding</a></li>
-                    <li><a href="#schools-sub">Schools and Teachers</a></li>
-                    <li><a href="#how-to-sub">How to Enroll</a></li>
-                </ul>
-            </div>-->
-            <!--navigation-sub-menu-->
    <?php 
             $menu = array(array('nw-program-sub', 'NW Program'), array('funding-sub', 'Funding'), array('schools-sub', 'Schools and Teachers'), array('how-to-sub', 'How to Enroll'));
             sub_menu($menu); 
             ?>
-
-
-
 
             <div class="nw-container">
                 <section class="why-montessori" id="nw-program-sub">

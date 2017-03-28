@@ -20,19 +20,6 @@ get_header(); ?>
                 </div>
             </div>
 
-
-            <!--<div class="navigation-sub-menu">
-                <ul>
-                    <div class="back">
-                        <li><a href="#back-top">Back to top</a></li>
-                    </div>
-                    <li><a href="#our-history-sub">Our History</a></li>
-                    <li><a href="#our-role-sub">Our Role</a></li>
-                    <li><a href="#meetings">Meetings</a></li>
-                    <li><a href="#board-members-sub">Board Members</a></li>
-                    <li><a href="#news-letter">Newsletter</a></li>
-                </ul>
-            </div>-->
             <?php 
             $menu = array(array('our-history-sub', 'Our History'), array('our-role-sub', 'Our Role'), array('meetings', 'Meetings'), array('board-members-sub', 'Board Members'),array('news-letter', 'Newsletter'));
             sub_menu($menu); 
