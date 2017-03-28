@@ -15,6 +15,7 @@
     justify-content: space-between;
     width: 95%;
     margin: 0 auto;
+    top: 0;
 }
 
 div.home-link-logo {
@@ -22,7 +23,7 @@ div.home-link-logo {
     height: 80px;
     z-index: 5;
     margin:0;
-    margin-top: 1rem;
+    margin-top: -0.5rem;
 }
 
 .site-branding h1 {

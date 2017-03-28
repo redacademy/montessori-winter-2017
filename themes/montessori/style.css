@@ -400,14 +400,15 @@ textarea {
   -ms-flex-pack: justify;
       justify-content: space-between;
   width: 95%;
-  margin: 0 auto; }
+  margin: 0 auto;
+  top: 0; }
 
 div.home-link-logo {
   width: 300px;
   height: 80px;
   z-index: 5;
   margin: 0;
-  margin-top: 1rem; }
+  margin-top: -0.5rem; }
 
 .site-branding h1 {
   background: url(../../images/logo/montessori-logo.svg);
@@ -2373,10 +2374,8 @@ p.contact-brand {
   font-size: 22px; }
 
 p.address {
-  font-size: 22px; }
-
-img.fb_img {
-  margin-right: 3rem; }
+  font-size: 22px;
+  margin: 0; }
 
 .page-template-what-is-montessori main.site-main {
   padding-top: 100px;
@@ -2400,6 +2399,15 @@ img.fb_img {
 p.scroller {
   font-size: 35px;
   margin-bottom: 0; }
+
+section.montessori-info {
+  padding-bottom: 5rem;
+  border-bottom: 2px solid #2EB688; }
+
+.history-of-montessori:after {
+  content: ' ';
+  display: table;
+  clear: both; }
 
 p {
   font-size: 22px; }
@@ -2430,7 +2438,7 @@ img.block-image {
   width: 127px;
   height: 100%; }
 
-p.block-title {
+h3.block-title {
   text-decoration: none;
   font-family: "Noto Sans";
   font-size: 22px;
@@ -2444,3 +2452,17 @@ p.block-title {
 .benefits-list li {
   font-size: 22px;
   margin: 2.5rem 0; }
+
+@media screen and (min-width: 1240px) {
+  blockquote p {
+    font-size: 30px;
+    border-left: solid 12px #DC3957;
+    padding-left: 60px; }
+  .right-quote blockquote p {
+    border-right: solid 12px #DC3957;
+    border-left: none;
+    padding-right: 60px; }
+  .materials:after {
+    content: ' ';
+    display: table;
+    clear: both; } }

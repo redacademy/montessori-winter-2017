@@ -22,6 +22,18 @@ p.scroller {
     margin-bottom: 0;
 }
 
+section.montessori-info {
+    padding-bottom: 5rem;
+    border-bottom: 2px solid #2EB688;
+}
+
+
+.history-of-montessori:after {
+        content: ' ';
+        display: table;
+        clear: both;
+}
+
 p {
     font-size: 22px;
 }
@@ -48,7 +60,7 @@ img.block-image {
     height: 100%
 }
 
-p.block-title{    
+h3.block-title{    
 text-decoration: none;
 font-family: "Noto Sans";
 font-size: 22px;
@@ -65,5 +77,28 @@ margin-bottom: 0
     font-size: 22px;
     margin: 2.5rem 0;
 
+
 }
 
+
+@media screen and (min-width: 1240px) {
+
+blockquote p{
+    font-size: 30px;
+    border-left: solid 12px #DC3957;
+    padding-left: 60px;
+}
+
+.right-quote blockquote p{
+    
+    border-right: solid 12px #DC3957;
+    border-left: none;
+    padding-right: 60px;
+}
+
+.materials:after {
+        content: ' ';
+        display: table;
+        clear: both;
+}
+}
