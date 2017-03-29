@@ -60,7 +60,11 @@ img.block-image {
     height: 100%
 }
 
+<<<<<<< HEAD
 h3.block-title{    
+=======
+p.block-title{    
+>>>>>>> 31b8564085dbbaed09af343580bef074dc07874b
 text-decoration: none;
 font-family: "Noto Sans";
 font-size: 22px;
@@ -70,6 +74,7 @@ line-height: 27px;
 color: #248E6A;
 margin-top: 0;
 margin-bottom: 0
+<<<<<<< HEAD
 
 }
 
@@ -83,22 +88,29 @@ margin-bottom: 0
 
 @media screen and (min-width: 1240px) {
 
-blockquote p{
-    font-size: 30px;
-    border-left: solid 12px #DC3957;
-    padding-left: 60px;
-}
 
-.right-quote blockquote p{
-    
-    border-right: solid 12px #DC3957;
-    border-left: none;
-    padding-right: 60px;
-}
+    blockquote p{
+        font-size: 30px;
+        border-left: solid 12px #DC3957;
+        padding-left: 60px;
+    }
 
-.materials:after {
-        content: ' ';
-        display: table;
-        clear: both;
-}
+    .right-quote blockquote p{
+        
+        border-right: solid 12px #DC3957;
+        border-left: none;
+        padding-right: 60px;
+    }
+
+    .materials:after {
+            content: ' ';
+            display: table;
+            clear: both;
+    }
+
+
+    .benefits-list li {
+        font-size: 22px;
+        margin: 2.5rem 0;
+    }
 }
