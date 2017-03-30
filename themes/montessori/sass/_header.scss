@@ -6,6 +6,7 @@
     margin: 0 auto;
     height: 100px;
     border-bottom: solid 1px #999999;
+    padding-bottom: 100px;
 }
 
 .header-content {
@@ -115,7 +116,7 @@ button.menu-toggle {
     border: none;
 }
 
-@media screen and (min-width: 1120px) {
+@media screen and (min-width: 1240px) {
 
 .site-header  {
     position: fixed;
@@ -125,7 +126,7 @@ button.menu-toggle {
 
 .main-navigation ul {
     height: 30px;
-    width: 78%;
+    max-width: 72%;
     display: flex;
     flex-direction: row;
     // position: absolute;

@@ -1,4 +1,5 @@
 .page-template-what-is-montessori main.site-main {
+    padding-top: 100px;
     width: 95%;
     margin: 0 auto;
 }
@@ -23,5 +24,44 @@ p.scroller {
 
 p {
     font-size: 22px;
+}
 
+div.blocks-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+div.philosophy-blocks {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 0;
+    width: 40%;
+    background-color: #AFF1D3;
+    margin: 2rem 15px;
+    align-items: center;
+}
+
+img.block-image {
+    width: 127px;
+    height: 100%
+}
+
+p.block-title{    
+text-decoration: none;
+font-family: "Noto Sans";
+font-size: 22px;
+font-weight: bold;
+text-align: center;
+line-height: 27px;
+color: #248E6A;
+margin-top: 0;
+margin-bottom: 0
+
+}
+
+.benefits-list li {
+    font-size: 22px;
+    margin: 2.5rem 0;
 }
