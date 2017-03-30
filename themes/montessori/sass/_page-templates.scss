@@ -857,6 +857,8 @@ margin-top:7%;
  img{
        margin-right: 380px;
    margin-top:45px;
+   width:85%;
+   height:300px;
  }
     
     }
@@ -865,6 +867,98 @@ margin-top:7%;
     h2{
     font-size: 25px;
 }
+}
+.newsletter{
+    margin-left: 5%;
+    
+}
+@media (min-width: 1240px){
+    .newsletter{
+width: 60%;
+}
+}
+
+  .news-read-more-button, .meeting-read-more-button{
+border-radius:6px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-size:25px;
+    font-weight: bold;
+	text-decoration:none;
+	width: 280px;
+  padding: 10px 1px;
+   font-family: "Noto Sans";
+    text-align: center; 
+    margin-left: 25%;
+    margin-top:5%;
+   
+  } 
+@media (min-width: 1240px){
+    .news-read-more-button, .meeting-read-more-button{
+        //margin-left: 75%;
+        width: 300px;
+        margin-top: 4%;
+         padding: 20px 1px;
+         margin-left:37%;
+    }
+}
+@media (min-width: 1240px){
+    .news-read-more-button{
+        margin-left: 70%;
+       
+    }
+}
+
+
+.news-read-more-button, .meeting-read-more-button{
+	background-color:#4FC8A1;
+
+}
+.news-title{
+    font-family: Asap;	
+    font-size: 36px;
+    margin-top:3%;
+}
+@media (min-width: 1240px){
+    .news-title{
+        font-size: 48px;
+    }
+}
+
+.news-sub-title{
+    	font-family: Asap;	
+        font-size: 30px;
+        margin-top:2%;
+}
+
+@media (min-width: 1240px){
+    .news-sub-title{
+        font-size:36px;
+    }
+}
+
+.news-date{
+    font-family: Asap;
+    	font-size: 24px;
+}
+@media (min-width: 1240px){
+  .news-date{
+      font-size:28px;
+  }  
+}
+
+.news-textarea{
+    	font-family: "Noto Sans";	
+        font-size: 24px;	
+        line-height: 40px;
+        margin-top:5%;
+}
+
+@media (min-width: 1240px){
+   .news-textarea{
+       font-size:24px;
+   } 
 }
 }
 

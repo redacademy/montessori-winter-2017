@@ -177,7 +177,7 @@ get_header(); ?>
                         <?php wp_reset_postdata(); ?>
 
                         <?php endif; ?>
-
+ <a href="#" class="meeting-read-more-button">Read More</a>
                     </div>
                     <!--about meeting-->
 
@@ -186,8 +186,21 @@ get_header(); ?>
 
             <div class="line2"></div>
             <section class="newsletter" id="news-letter">
-                <h2>Newsletter</h2>
+               <div class="news-title">
+                <?php echo CFS()->get('newsletter_title');?>
+                </div>
+                <div class="news-sub-title">
+                <?php echo CFS()->get('newsletter_sub_title');?>
+                </div>
+                <div class="news-date">
+                <?php echo CFS()->get('newsletter_date');?>
+                </div>
+                <div class="news-textarea">
+                <?php echo CFS()->get('newsletter_textarea');?>
+                </div>
+               
             </section>
+             <a href="#" class="news-read-more-button">Read More</a>
             <div class="line2"></div>
             <section class="about-archives">
                 <h2>Archives</h2>
