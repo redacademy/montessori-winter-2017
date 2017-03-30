@@ -137,7 +137,52 @@ get_header(); ?>
                             <a href="#" class="united-way">United Way</a>
                         </div>
                     </div>
+
                 </section>
+                <div class="cheque-and-united-text">
+                    <div class="make-cheque">
+                        <p>Make cheque to <b>New Westminster Montessori Society</b> and send it to our mailing address: Suite
+                            379, 104-1015 Columbia Street New Westminster BC, V3M 6V3.</p>
+                        <p>Or bring the cheque in person to the <b>monthly board meeting.</b>
+                            <p>The Board Meetings are held on the last Wednesday od each month at 6:30pm in the Library of Richard
+                                McBride Elementary, 331 Richmond St, New Westminster.</p>
 
+                    </div>
+                    <div class="the-united-way">
+                        <p>The United Way is an easy way to donate to the Montessori program. You can make contributions through
+                            your employer by filling out the form. Our requisites:</p>
+                        <p><b>Donor Designation category:</b> New Westminster Montessori Society</p>
+                        <p><b>Charity number:</b> 86867 6743 RR0001</p>
+                        <p><b>Address:</b> New Westminster Montessori Society, Suite 379, 104-1015 Columbia Street New Westminster
+                            BC, V3M 6V3</p>
 
+                    </div>
+                </div>
+
+                <div class="become-volunteer-buttons">
+                    <div class="in-person">
+                        <a href="#" class="paypal">In Person</a>
+                    </div>
+                    <div class="volunteer-online">
+                        <a href="#" class="online">Online</a>
+                    </div>
+                    <div class="volunteer-email">
+                        <a href="#" class="by-email">By Email</a>
+                    </div>
+                </div>
+                <div class="volunteer-text">
+                <div class="in-person-text">
+                    <p>To enquire about volunteer opportunities <b>in person</b> attend the next Monthly Board Meeting.</p>
+                    <p>The Board Meetings are held on the last Wednesday of each month at 6:30pm in the Library of Richard McBride Elementary, 331 Richmond St, New Westminster.</p>
+                    </div>
+                    <div class="apply-online-text">
+                        <p><b>Apply online</b> through contact form to learn about current volunteer opportunities.</p>
+                        </div>
+                        <div class="apply-now-button">
+                            <a href="#" class="apply-text-online">Apply</a> 
+                        </div>
+                        <div class="apply-by-email">
+                            <p>Send an email to <b>info@newwestmontessori.ca</b> to express your interest in volunteering and request information about current opportunities.</p>
+                            </div>
+</div>
                 <?php get_footer();?>
