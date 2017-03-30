@@ -22,6 +22,13 @@ p.scroller {
     margin-bottom: 0;
 }
 
+h1.section-title,
+h1.primary-title {
+    font-size: 33px;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
 section.montessori-info {
     padding-bottom: 5rem;
     border-bottom: 2px solid #2EB688;
@@ -45,26 +52,60 @@ div.blocks-container {
     justify-content: space-around;
 }
 
-div.philosophy-blocks {
+div.philosophy-blocks1,
+div.philosophy-blocks2,
+div.philosophy-blocks3,
+div.philosophy-blocks4,
+div.philosophy-blocks5,
+div.philosophy-blocks6 {
     display: flex;
     flex-direction: column;
-    padding: 2rem 0;
+    padding: 2rem 2rem;
     width: 40%;
     background-color: #AFF1D3;
     margin: 2rem 15px;
     align-items: center;
+    justify-content: center;
+
+        &.active {
+        background-color: #fff;
+        border: solid 1px #2EB688
+    }
+
 }
 
-img.block-image {
-    width: 127px;
-    height: 100%
+div.block-content1,
+div.block-content2,
+div.block-content3,
+div.block-content4,
+div.block-content5,
+div.block-content6 {
+    
+    display: none;
+
+    &.active {
+    display: block;
+    }
 }
 
-<<<<<<< HEAD
-h3.block-title{    
-=======
-p.block-title{    
->>>>>>> 31b8564085dbbaed09af343580bef074dc07874b
+img.block-image1,
+img.block-image2,
+img.block-image3,
+img.block-image4,
+img.block-image5,
+img.block-image6 {
+    width: auto;
+    height: 110px;
+    
+    &.active {
+    display: none;
+    }
+
+}
+
+h3.content-title,
+h3.block-title,    
+{    
 text-decoration: none;
 font-family: "Noto Sans";
 font-size: 22px;
@@ -74,7 +115,6 @@ line-height: 27px;
 color: #248E6A;
 margin-top: 0;
 margin-bottom: 0
-<<<<<<< HEAD
 
 }
 
@@ -88,11 +128,11 @@ margin-bottom: 0
 
 @media screen and (min-width: 1240px) {
 
-
     blockquote p{
         font-size: 30px;
         border-left: solid 12px #DC3957;
         padding-left: 60px;
+        margin-left: 100px;
     }
 
     .right-quote blockquote p{
@@ -100,6 +140,31 @@ margin-bottom: 0
         border-right: solid 12px #DC3957;
         border-left: none;
         padding-right: 60px;
+        margin-left: 550px;
+    }
+
+    
+
+    div.philosophy-blocks1,
+    div.philosophy-blocks2,
+    div.philosophy-blocks3,
+    div.philosophy-blocks4,
+    div.philosophy-blocks5,
+    div.philosophy-blocks6 {
+
+        width: 30%;
+        border-radius: 10px;
+
+    }
+
+    img.block-image1,
+    img.block-image2,
+    img.block-image3,
+    img.block-image4,
+    img.block-image5,
+    img.block-image6 {
+    width: auto;
+    height: 200px;
     }
 
     .materials:after {
@@ -113,4 +178,6 @@ margin-bottom: 0
         font-size: 22px;
         margin: 2.5rem 0;
     }
+
 }
+
