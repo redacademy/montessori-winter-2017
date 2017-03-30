@@ -97,10 +97,10 @@ get_header(); ?>
                         <?php echo CFS()->get('montessori_hundred_board_quote');?>
                         <?php echo CFS()->get('montessori_hundred_board_text');?>
                     </div>
-                    <div class="materials">
+                    <div class="materials binomial">
                         <h1 class= "section-title"><?php echo CFS()->get('the_binomial_cube_title');?></h1>
                         <?php echo CFS()->get('the_binomial_cube_text');?>
-                        <?php echo CFS()->get('the_binomial_cube_quote');?>
+                        <div class="right-quote"><?php echo CFS()->get('the_binomial_cube_quote');?></div>
                     </div>    
                 </section> 
     </main>

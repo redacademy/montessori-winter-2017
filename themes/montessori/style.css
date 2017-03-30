@@ -793,13 +793,10 @@ object {
   margin-top: 0px;
   padding-top: 8px; }
 
-<<<<<<< HEAD
 .content-front-page .navigation-sub-menu {
   position: fixed;
   width: 100%; }
 
-=======
->>>>>>> added javascript function to make philosophy box content only appear on click
 @media (min-width: 1240px) {
   .content-front-page .navigation-sub-menu {
     position: fixed;
@@ -831,11 +828,7 @@ object {
 @media (min-width: 1240px) {
   .content-front-page .welcome-text {
     background-size: 100% auto;
-<<<<<<< HEAD
     height: 683px;
-=======
-    height: 650px;
->>>>>>> added javascript function to make philosophy box content only appear on click
     width: 550px;
     position: absolute;
     top: 100px; } }
@@ -1451,18 +1444,13 @@ object {
 @media (min-width: 1240px) {
   .content-about .minute-image img {
     margin-right: 380px;
-<<<<<<< HEAD
     margin-top: 45px;
     width: 85%;
     height: 300px; } }
-=======
-    margin-top: 45px; } }
->>>>>>> added javascript function to make philosophy box content only appear on click
 
 .content-about .minute-date h2 {
   font-size: 25px; }
 
-<<<<<<< HEAD
 .content-about .newsletter {
   margin-left: 5%; }
 
@@ -1535,8 +1523,6 @@ object {
   .content-about .news-textarea {
     font-size: 24px; } }
 
-=======
->>>>>>> added javascript function to make philosophy box content only appear on click
 @media (min-width: 1240px) {
   .content-nw-program h3 {
     display: none; } }
@@ -1939,7 +1925,6 @@ h2 {
 .official-school {
   background-color: #4FC8A1; }
 
-<<<<<<< HEAD
 .get-container {
   margin-left: 6%;
   margin-right: 6%; }
@@ -2238,8 +2223,6 @@ h2 {
   margin-left: 5%;
   margin-top: 10%; }
 
-=======
->>>>>>> added javascript function to make philosophy box content only appear on click
 /*Footer*/
 .footer-container {
   background-color: #125A50;
@@ -2417,15 +2400,12 @@ p.scroller {
   font-size: 35px;
   margin-bottom: 0; }
 
-<<<<<<< HEAD
-=======
 h1.section-title,
 h1.primary-title {
   font-size: 33px;
   padding-top: 2rem;
   padding-bottom: 2rem; }
 
->>>>>>> added javascript function to make philosophy box content only appear on click
 section.montessori-info {
   padding-bottom: 5rem;
   border-bottom: 2px solid #2EB688; }
@@ -2448,37 +2428,21 @@ div.blocks-container {
   -ms-flex-pack: distribute;
       justify-content: space-around; }
 
-<<<<<<< HEAD
-div.philosophy-blocks {
-=======
 div.philosophy-blocks1,
 div.philosophy-blocks2,
 div.philosophy-blocks3,
 div.philosophy-blocks4,
 div.philosophy-blocks5,
 div.philosophy-blocks6 {
->>>>>>> added javascript function to make philosophy box content only appear on click
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
       flex-direction: column;
-<<<<<<< HEAD
-  padding: 2rem 0;
-=======
   padding: 2rem 2rem;
->>>>>>> added javascript function to make philosophy box content only appear on click
   width: 40%;
   background-color: #AFF1D3;
   margin: 2rem 15px;
   -ms-flex-align: center;
-<<<<<<< HEAD
-      align-items: center; }
-
-img.block-image {
-  width: 127px;
-  height: 100%; }
-
-=======
       align-items: center;
   -ms-flex-pack: center;
       justify-content: center; }
@@ -2523,7 +2487,6 @@ img.block-image6 {
     display: none; }
 
 h3.content-title,
->>>>>>> added javascript function to make philosophy box content only appear on click
 h3.block-title {
   text-decoration: none;
   font-family: "Noto Sans";
@@ -2539,21 +2502,13 @@ h3.block-title {
   font-size: 22px;
   margin: 2.5rem 0; }
 
+.binomial {
+  padding-bottom: 5rem; }
+
 @media screen and (min-width: 1240px) {
   blockquote p {
     font-size: 30px;
     border-left: solid 12px #DC3957;
-<<<<<<< HEAD
-    padding-left: 60px; }
-  .right-quote blockquote p {
-    border-right: solid 12px #DC3957;
-    border-left: none;
-    padding-right: 60px; }
-  .materials:after {
-    content: ' ';
-    display: table;
-    clear: both; } }
-=======
     padding-left: 60px;
     margin-left: 100px; }
   .right-quote blockquote p {
@@ -2584,4 +2539,3 @@ h3.block-title {
   .benefits-list li {
     font-size: 22px;
     margin: 2.5rem 0; } }
->>>>>>> added javascript function to make philosophy box content only appear on click
