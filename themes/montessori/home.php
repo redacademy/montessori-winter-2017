@@ -30,15 +30,11 @@ get_header(); ?>
                 <section class="what-is-new">
                     <div class="get-involved-titles">
                         <!--<?php
-                $args = array('post_type' => 'post', 'order' => 'DSC', 'posts_per_page' => 3 );
-               // $product_posts = get_posts( $args ); // returns an array of posts
-               $product_posts = new WP_Query($args);
-                ?>-->
-
+                          $args = array('post_type' => 'post', 'order' => 'DSC', 'posts_per_page' => 3 );
+                          $product_posts = new WP_Query($args);
+                         ?>-->
                         <?php while ($product_posts->have_posts() ) : $product_posts->the_post(); ?>
-
                         <?php //get_template_part( 'template-parts/content'); ?>
-
                         <ul class="nav-t nav-tabs">
                             <li class="active">
                                 <h4>
@@ -53,15 +49,10 @@ get_header(); ?>
                             </li>
                         </ul>
                         <?php endwhile; // End of the loop. ?>
-
                     </div>
                     <div class="get-involved-content">
-
-
                         <?php while ($product_posts->have_posts() ) : $product_posts->the_post(); ?>
-
                         <div id="tab1" class="tab-content active">
-
                             <div class="middle-school-textarea">
                                 <?php echo CFS()->get('montessori_in_the_middle_school_textarea');?>
                             </div>
@@ -79,7 +70,6 @@ get_header(); ?>
                             </div>
                             <?php endwhile; // End of the loop. ?>
                             <a href="#" class="express-your-interest">Express Your Interest</a>
-
                         </div>
                         <div id="tab2" class="tab-content hide">
                             <?php while ($product_posts->have_posts() ) : $product_posts->the_post(); ?>
@@ -93,7 +83,7 @@ get_header(); ?>
                                 </div>
                             </div>
                         </div>
-                        <div class="tab-content hide">
+                        <div id="tab1" class="tab-content hide">
                             <div class="interview-picture">
                                 <!--<img src="<?php echo CFS()->get('montessori_text_picture');?>">-->
                             </div>
@@ -115,9 +105,9 @@ get_header(); ?>
                         <div class="carousel-cell">
                             <ul>
                                 <?php
-                        $fields = CFS()->get('support_now_pictures_title'); // returns an array of posts
-                        if(!empty($fields)):
-                            foreach ( $fields as $field ):?>
+                                $fields = CFS()->get('support_now_pictures_title'); // returns an array of posts
+                                if(!empty($fields)):
+                                foreach ( $fields as $field ):?>
                                     <li>
                                         <p><img src="<?php echo $field['support_now_first_picture']; ?>" /></p>
                                     </li>
@@ -125,6 +115,7 @@ get_header(); ?>
                                     <?php endif; ?>
                             </ul>
                             <?php endwhile; // End of the loop. ?>
+                            <?php wp_reset_postdata(); ?>
                         </div>
                     </div>
 
@@ -135,9 +126,17 @@ get_header(); ?>
                         <a href="#" class="make-donation">Make a Donation</a>
                         <a href="#" class="become-volunteer">Become a Volunteer</a>
                     </div>
-                    <!--<div class="paypal-imagen">
-                        <a href="#"><img src="../../images/paypal.png" /></a>
-                    </div>-->
+                    <div class="paypal-cheque-united-buttons">
+                        <div class="paypal-link">
+                            <a href="https://www.paypal.com/signin" class="paypal">PayPal</a>
+                        </div>
+                        <div class="by-cheque">
+                            <a href="#" class="by-cheque">By Cheque</a>
+                        </div>
+                        <div class="united-way">
+                            <a href="#" class="united-way">United Way</a>
+                        </div>
+                    </div>
                 </section>
 
 
