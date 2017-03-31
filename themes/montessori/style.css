@@ -1963,26 +1963,23 @@ h2 {
   margin-left: 3%;
   height: 180px; }
 
-.nav-tabs a {
-  background-color: #AFF1D3; }
-
-.nav-tabs:before, .nav-tabs:after {
-  display: table;
-  content: ""; }
-
-.nav-tabs:after {
-  clear: both; }
-
-.nav-tabs > .active > a:focus, .nav-tabs > .active > a:hover, .nav-tabs > .active > a:focus {
-  cursor: default;
-  background-color: #4FC8A1; }
-
-.tab-content.active {
-  display: block; }
-
 .nav-tabs {
   padding-left: 10px;
   text-align: left; }
+
+ul.nav-tabs li a {
+  background: #AFF1D3;
+  color: black;
+  display: inline-block;
+  padding: 10px 15px;
+  cursor: pointer; }
+
+ul.nav-tabs li a.current {
+  background: #4FC8A1;
+  color: #222; }
+
+.tab-content.current {
+  display: inherit; }
 
 .middle-school-textarea, .montessori-first-textarea {
   font-family: Asap;
