@@ -11,20 +11,27 @@ get_header(); ?>
     <main id="main" class="site-main" role="main">
 
       <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+        <div class= "entry-header-container">             
             <header class="entry-header">
                 <?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
                 <p class="scroller">Back to top</p>
             </header><!-- .entry-header -->
+        <div class= "sub-menu-container">
+             <?php 
+            $menu = array(array('history-sub', 'History'), array('philosophy-sub', 'Philosophy'), array('benefits-sub', 'Benefits of Montessori'), array('materials-sub', 'Materials'),array('resources-sub', 'Resources'));
+            sub_menu($menu); 
+            ?>
+        </div> 
       </article>
 
-                <section class="montessori-info history-of-montessori">                    
-                    <h1 class= "section-title"><?php echo CFS()->get('primary_title');?></h1>
+                <section class="montessori-info history-of-montessori" id="history-sub">                    
+                        <?php echo CFS()->get('primary_title');?>
                         <?php echo CFS()->get('text_part_1');?>
                         <div class ="right-quote"><?php echo CFS()->get('the_quote');?></div>
                         <?php echo CFS()->get('text_part_2');?>                    
                 </section>
 
-                <section class="montessori-info">
+                <section class="montessori-info" id="philosophy-sub">
                     <h1 class= "section-title">Philosophy</h1>
                     <div class="blocks-container">    
                         <div class= "philosophy-blocks1">
@@ -72,8 +79,8 @@ get_header(); ?>
                     </div>
                 </section>
 
-                <section class="montessori-info">
-                    <h1 class= "section-title"><?php echo CFS()->get('sec_title');?></h1>
+                <section class="montessori-info" id="benefits-sub">
+                    <?php echo CFS()->get('sec_title');?>
                     <?php echo CFS()->get('sec_text_part_1');?>
                     <?php echo CFS()->get('sec_quote');?>
                     <?php echo CFS()->get('sec_text_part_2');?>
@@ -86,7 +93,7 @@ get_header(); ?>
                     <ul>
                 </section>
 
-                <section class="montessori_materials">                    
+                <section class="montessori_materials" id="materials-sub">                    
                     <div class="materials">    
                         <h1 class= "section-title"><?php echo CFS()->get('montessori_materials_title');?></h1>
                         <?php echo CFS()->get('montessori_materials_quote');?>

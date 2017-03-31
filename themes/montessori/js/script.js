@@ -33,4 +33,5 @@
         $(".block-image6").toggleClass("active");
         $(".block-content6").toggleClass("active");
     })
+    
 })(jQuery);

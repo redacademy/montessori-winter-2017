@@ -2297,26 +2297,38 @@ h2 {
 
 .page-template-contact main.site-main {
   padding-top: 100px;
-  width: 95%;
   margin: 0 auto; }
 
+div.entry-header-container {
+  top: -20px;
+  padding-bottom: 75px;
+  width: 100%;
+  background-color: #fff; }
+
 .entry-header {
+  width: 95%;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: row;
       flex-direction: row;
   -ms-flex-pack: justify;
       justify-content: space-between;
-  border-bottom: 2px solid #2EB688; }
+  border-bottom: 2px solid #2EB688;
+  position: fixed;
+  z-index: 1;
+  background-color: #fff;
+  margin: 0; }
 
 .entry-title {
   text-transform: uppercase;
   margin-bottom: 0;
-  font-size: 40px; }
+  font-size: 40px;
+  margin-top: 0; }
 
 p.scroller {
   font-size: 35px;
-  margin-bottom: 0; }
+  margin-bottom: 0;
+  margin-top: 5px; }
 
 p.in-touch {
   font-size: 22px; }
@@ -2377,16 +2389,51 @@ p.address {
   font-size: 22px;
   margin: 0; }
 
+@media screen and (min-width: 1240px) {
+  input.contact_name,
+  input.contact_email,
+  input.contact_number,
+  select.contact_subject,
+  select.contact_schools,
+  select.contact_grade {
+    width: 45%; }
+  textarea.contact_message {
+    width: 90%; }
+  div.submit_form {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+        flex-direction: row;
+    -ms-flex-pack: end;
+        justify-content: flex-end;
+    width: 91%; }
+  input.wpcf7-submit {
+    width: 15%;
+    height: 60px;
+    color: white;
+    background-color: #4FC8A1;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    margin: 0; } }
+
 .page-template-what-is-montessori main.site-main {
   padding-top: 100px;
-  width: 95%;
   margin: 0 auto; }
+
+div.entry-header-container {
+  top: -20px;
+  padding-bottom: 75px;
+  width: 100%;
+  background-color: #fff;
+  z-index: 100; }
 
 .entry-header {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: row;
       flex-direction: row;
+  width: 100%;
   -ms-flex-pack: justify;
       justify-content: space-between;
   border-bottom: 2px solid #2EB688; }
