@@ -11,74 +11,75 @@ get_header(); ?>
     <main id="main" class="site-main" role="main">
 
       <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+        <div class= "entry-header-container">             
             <header class="entry-header">
                 <?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
                 <p class="scroller">Back to top</p>
             </header><!-- .entry-header -->
+        <div class= "sub-menu-container">
+             <?php 
+            $menu = array(array('history-sub', 'History'), array('philosophy-sub', 'Philosophy'), array('benefits-sub', 'Benefits of Montessori'), array('materials-sub', 'Materials'),array('resources-sub', 'Resources'));
+            sub_menu($menu); 
+            ?>
+        </div> 
       </article>
 
-                <section class="background">                    
-                    <?php echo CFS()->get('what_is_Montessori_fields_pt1');?>
-                    <?php echo CFS()->get('primary_title');?>
-                    <br>
-                    <?php echo CFS()->get('text_part_1');?>
-                    <?php echo CFS()->get('the_quote');?>
-                    <?php echo CFS()->get('text_part_2');?>
+                <section class="montessori-info history-of-montessori" id="history-sub">                    
+                        <?php echo CFS()->get('primary_title');?>
+                        <?php echo CFS()->get('text_part_1');?>
+                        <div class ="right-quote"><?php echo CFS()->get('the_quote');?></div>
+                        <?php echo CFS()->get('text_part_2');?>                    
                 </section>
-                <br>
-                <br>
-                <br>
-                <section class="philosophy">
-                    <h1>Philosophy</h1>
+
+                <section class="montessori-info" id="philosophy-sub">
+                    <h1 class= "section-title">Philosophy</h1>
                     <div class="blocks-container">    
-                        <div class= "philosophy-blocks">
-                            <img class= "block-image" src="<?php bloginfo('stylesheet_directory');?>/images/philosophy/follow-child.png" alt="Follow the Child">
-                            <?php echo CFS()->get('Follow_the_child');?>
-                            <?php echo CFS()->get('follow_the_child_title');?>
-                            <?php echo CFS()->get('follow_the_child_text');?>
-                            <p class="block-title">"Follow the Child"</p>
+                        <div class= "philosophy-blocks1">
+                            <img class= "block-image1" src="<?php bloginfo('stylesheet_directory');?>/images/philosophy/follow-child.png" alt="Follow the Child">
+                            <h3 class="content-title"><?php echo CFS()->get('follow_the_child_title');?></h3>                            
+                            <div class= "block-content1">
+                                <p class="read"><?php echo CFS()->get('follow_the_child_text');?></p>
+                            </div>    
                         </div>
-                        <div class= "philosophy-blocks">
-                            <img class= "block-image" src="<?php bloginfo('stylesheet_directory');?>/images/philosophy/multi-age.png" alt="Multi-age Group">
-                            <?php echo CFS()->get('Multi_Age_Group');?>
-                            <?php echo CFS()->get('multi_age_group_title');?>
-                            <?php echo CFS()->get('multi_age_group_text');?>
-                            <p class="block-title">Multi-Age Group</p>
+                        <div class= "philosophy-blocks2">
+                            <img class= "block-image2" src="<?php bloginfo('stylesheet_directory');?>/images/philosophy/multi-age.png" alt="Multi-age Group">
+                            <h3 class="content-title"><?php echo CFS()->get('multi_age_group_title');?></h3>
+                            <div class= "block-content2">    
+                                <p class="read"><?php echo CFS()->get('multi_age_group_text');?></p>
+                            </div>
                         </div>
-                        <div class= "philosophy-blocks">
-                            <img class= "block-image" src="<?php bloginfo('stylesheet_directory');?>/images/philosophy/teachers.png" alt="Teachers">
-                            <?php echo CFS()->get('Teachers');?>
-                            <?php echo CFS()->get('teachers_title');?>
-                            <?php echo CFS()->get('teachers_text');?>
-                            <p class="block-title">Teachers</p>
+                        <div class= "philosophy-blocks3">
+                            <img class= "block-image3" src="<?php bloginfo('stylesheet_directory');?>/images/philosophy/teachers.png" alt="Teachers">
+                            <h3 class="content-title"><?php echo CFS()->get('teachers_title');?></h3>                            
+                            <div class= "block-content3">    
+                                <p class="read"><?php echo CFS()->get('teachers_text');?></p>
+                            </div>
                         </div>
-                        <div class= "philosophy-blocks">
-                            <img class= "block-image" src="<?php bloginfo('stylesheet_directory');?>/images/philosophy/learning-periods.png" alt="Sensitive Periods of Learning">
-                            <?php echo CFS()->get('Learning');?>
-                            <?php echo CFS()->get('learning_title');?>
-                            <?php echo CFS()->get('learning_text');?>
-                            <p class="block-title">Sensitive periods of Learning</p> 
-                            <!--<p class="block-title"></p>-->
+                        <div class= "philosophy-blocks4">
+                            <img class= "block-image4" src="<?php bloginfo('stylesheet_directory');?>/images/philosophy/learning-periods.png" alt="Sensitive Periods of Learning">
+                            <h3 class="content-title"><?php echo CFS()->get('learning_title');?></h3>                            
+                            <div class= "block-content4">
+                                <p class="read"><?php echo CFS()->get('learning_text');?></p>
+                            </div>
                         </div>
-                        <div class= "philosophy-blocks">
-                            <img class= "block-image" src="<?php bloginfo('stylesheet_directory');?>/images/philosophy/prepped-enviro.png" alt="Prepared Environment">
-                            <?php echo CFS()->get('Prepared_Environment');?>
-                            <?php echo CFS()->get('environment_title');?>
-                            <?php echo CFS()->get('environment_text');?>
-                            <p class="block-title">Prepared Environment</p>
+                        <div class= "philosophy-blocks5">
+                            <img class= "block-image5" src="<?php bloginfo('stylesheet_directory');?>/images/philosophy/prepped-enviro.png" alt="Prepared Environment">
+                            <h3 class="content-title"><?php echo CFS()->get('environment_title');?></h3>                           
+                            <div class= "block-content5">
+                                <p class="read"><?php echo CFS()->get('environment_text');?></p>
+                            </div>
                         </div>
-                        <div class= "philosophy-blocks">
-                            <img class= "block-image" src="<?php bloginfo('stylesheet_directory');?>/images/philosophy/respect.png" alt="Respect">
-                            <?php echo CFS()->get('Respect');?>
-                            <?php echo CFS()->get('respect_title');?>
-                            <?php echo CFS()->get('respect_text');?>
-                            <p class="block-title">Respect</p>
+                        <div class= "philosophy-blocks6">
+                            <img class= "block-image6" src="<?php bloginfo('stylesheet_directory');?>/images/philosophy/respect.png" alt="Respect">
+                            <h3 class="content-title"><?php echo CFS()->get('respect_title');?></h3>
+                            <div class= "block-content6">
+                                <p class="read"><?php echo CFS()->get('respect_text');?></p>
+                            </div>
                         </div>
                     </div>
                 </section>
 
-                <section class="benefits">
-                    <?php echo CFS()->get('what_is_Montessori_fields_pt2');?>
+                <section class="montessori-info" id="benefits-sub">
                     <?php echo CFS()->get('sec_title');?>
                     <?php echo CFS()->get('sec_text_part_1');?>
                     <?php echo CFS()->get('sec_quote');?>
@@ -92,31 +93,23 @@ get_header(); ?>
                     <ul>
                 </section>
 
-                <section class="montessori_materials">                    
+                <section class="montessori_materials" id="materials-sub">                    
                     <div class="materials">    
-                        <?php echo CFS()->get('Montessori_Materials');?>
-                        <h1><?php echo CFS()->get('montessori_materials_title');?></h1>
-                        <br>
+                        <h1 class= "section-title"><?php echo CFS()->get('montessori_materials_title');?></h1>
                         <?php echo CFS()->get('montessori_materials_quote');?>
                         <?php echo CFS()->get('montessori_materials_text');?>
                     </div>
                     <div class="materials">  
-                        <?php echo CFS()->get('Montessori_Hundred_Board');?>
-                        <h1><?php echo CFS()->get('montessori_hundred_board_title');?></h1>
+                        <h1 class= "section-title"><?php echo CFS()->get('montessori_hundred_board_title');?></h1>
                         <?php echo CFS()->get('montessori_hundred_board_quote');?>
                         <?php echo CFS()->get('montessori_hundred_board_text');?>
                     </div>
-                    <div class="materials">
-                        <?php echo CFS()->get('The_Binomial_Cube');?>
-                        <h1><?php echo CFS()->get('the_binomial_cube_title');?></h1>
-                        <br>    
+                    <div class="materials binomial">
+                        <h1 class= "section-title"><?php echo CFS()->get('the_binomial_cube_title');?></h1>
                         <?php echo CFS()->get('the_binomial_cube_text');?>
-                        <?php echo CFS()->get('the_binomial_cube_quote');?>
+                        <div class="right-quote"><?php echo CFS()->get('the_binomial_cube_quote');?></div>
                     </div>    
                 </section> 
-                <br>
-                <br>
-                <br>
     </main>
 </div>
  <?php get_footer();?>

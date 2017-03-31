@@ -400,14 +400,15 @@ textarea {
   -ms-flex-pack: justify;
       justify-content: space-between;
   width: 95%;
-  margin: 0 auto; }
+  margin: 0 auto;
+  top: 0; }
 
 div.home-link-logo {
   width: 300px;
   height: 80px;
   z-index: 5;
   margin: 0;
-  margin-top: 1rem; }
+  margin-top: -0.5rem; }
 
 .site-branding h1 {
   background: url(../../images/logo/montessori-logo.svg);
@@ -493,7 +494,7 @@ button.menu-toggle {
   height: 0.37em;
   background: grey;
   border-radius: 5px;
-  box-shadow: 0 1em 0 0 grey, 0 2em 0 0 grey;
+  box-shadow: 0 1em 0 0 grey, 0 2em 0 0 grey;
   border: none; }
 
 @media screen and (min-width: 1240px) {
@@ -2350,26 +2351,38 @@ ul.nav-tabs li a.current {
 
 .page-template-contact main.site-main {
   padding-top: 100px;
-  width: 95%;
   margin: 0 auto; }
 
+div.entry-header-container {
+  top: -20px;
+  padding-bottom: 75px;
+  width: 100%;
+  background-color: #fff; }
+
 .entry-header {
+  width: 95%;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: row;
       flex-direction: row;
   -ms-flex-pack: justify;
       justify-content: space-between;
-  border-bottom: 2px solid #2EB688; }
+  border-bottom: 2px solid #2EB688;
+  position: fixed;
+  z-index: 1;
+  background-color: #fff;
+  margin: 0; }
 
 .entry-title {
   text-transform: uppercase;
   margin-bottom: 0;
-  font-size: 40px; }
+  font-size: 40px;
+  margin-top: 0; }
 
 p.scroller {
   font-size: 35px;
-  margin-bottom: 0; }
+  margin-bottom: 0;
+  margin-top: 5px; }
 
 p.in-touch {
   font-size: 22px; }
@@ -2427,21 +2440,54 @@ p.contact-brand {
   font-size: 22px; }
 
 p.address {
-  font-size: 22px; }
+  font-size: 22px;
+  margin: 0; }
 
-img.fb_img {
-  margin-right: 3rem; }
+@media screen and (min-width: 1240px) {
+  input.contact_name,
+  input.contact_email,
+  input.contact_number,
+  select.contact_subject,
+  select.contact_schools,
+  select.contact_grade {
+    width: 45%; }
+  textarea.contact_message {
+    width: 90%; }
+  div.submit_form {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+        flex-direction: row;
+    -ms-flex-pack: end;
+        justify-content: flex-end;
+    width: 91%; }
+  input.wpcf7-submit {
+    width: 15%;
+    height: 60px;
+    color: white;
+    background-color: #4FC8A1;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    margin: 0; } }
 
 .page-template-what-is-montessori main.site-main {
   padding-top: 100px;
-  width: 95%;
   margin: 0 auto; }
+
+div.entry-header-container {
+  top: -20px;
+  padding-bottom: 75px;
+  width: 100%;
+  background-color: #fff;
+  z-index: 100; }
 
 .entry-header {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: row;
       flex-direction: row;
+  width: 100%;
   -ms-flex-pack: justify;
       justify-content: space-between;
   border-bottom: 2px solid #2EB688; }
@@ -2454,6 +2500,21 @@ img.fb_img {
 p.scroller {
   font-size: 35px;
   margin-bottom: 0; }
+
+h1.section-title,
+h1.primary-title {
+  font-size: 33px;
+  padding-top: 2rem;
+  padding-bottom: 2rem; }
+
+section.montessori-info {
+  padding-bottom: 5rem;
+  border-bottom: 2px solid #2EB688; }
+
+.history-of-montessori:after {
+  content: ' ';
+  display: table;
+  clear: both; }
 
 p {
   font-size: 22px; }
@@ -2468,23 +2529,66 @@ div.blocks-container {
   -ms-flex-pack: distribute;
       justify-content: space-around; }
 
-div.philosophy-blocks {
+div.philosophy-blocks1,
+div.philosophy-blocks2,
+div.philosophy-blocks3,
+div.philosophy-blocks4,
+div.philosophy-blocks5,
+div.philosophy-blocks6 {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
       flex-direction: column;
-  padding: 2rem 0;
+  padding: 2rem 2rem;
   width: 40%;
   background-color: #AFF1D3;
   margin: 2rem 15px;
   -ms-flex-align: center;
-      align-items: center; }
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center; }
+  div.philosophy-blocks1.active,
+  div.philosophy-blocks2.active,
+  div.philosophy-blocks3.active,
+  div.philosophy-blocks4.active,
+  div.philosophy-blocks5.active,
+  div.philosophy-blocks6.active {
+    background-color: #fff;
+    border: solid 1px #2EB688; }
 
-img.block-image {
-  width: 127px;
-  height: 100%; }
+div.block-content1,
+div.block-content2,
+div.block-content3,
+div.block-content4,
+div.block-content5,
+div.block-content6 {
+  display: none; }
+  div.block-content1.active,
+  div.block-content2.active,
+  div.block-content3.active,
+  div.block-content4.active,
+  div.block-content5.active,
+  div.block-content6.active {
+    display: block; }
 
-p.block-title {
+img.block-image1,
+img.block-image2,
+img.block-image3,
+img.block-image4,
+img.block-image5,
+img.block-image6 {
+  width: auto;
+  height: 110px; }
+  img.block-image1.active,
+  img.block-image2.active,
+  img.block-image3.active,
+  img.block-image4.active,
+  img.block-image5.active,
+  img.block-image6.active {
+    display: none; }
+
+h3.content-title,
+h3.block-title {
   text-decoration: none;
   font-family: "Noto Sans";
   font-size: 22px;
@@ -2498,3 +2602,41 @@ p.block-title {
 .benefits-list li {
   font-size: 22px;
   margin: 2.5rem 0; }
+
+.binomial {
+  padding-bottom: 5rem; }
+
+@media screen and (min-width: 1240px) {
+  blockquote p {
+    font-size: 30px;
+    border-left: solid 12px #DC3957;
+    padding-left: 60px;
+    margin-left: 100px; }
+  .right-quote blockquote p {
+    border-right: solid 12px #DC3957;
+    border-left: none;
+    padding-right: 60px;
+    margin-left: 550px; }
+  div.philosophy-blocks1,
+  div.philosophy-blocks2,
+  div.philosophy-blocks3,
+  div.philosophy-blocks4,
+  div.philosophy-blocks5,
+  div.philosophy-blocks6 {
+    width: 30%;
+    border-radius: 10px; }
+  img.block-image1,
+  img.block-image2,
+  img.block-image3,
+  img.block-image4,
+  img.block-image5,
+  img.block-image6 {
+    width: auto;
+    height: 200px; }
+  .materials:after {
+    content: ' ';
+    display: table;
+    clear: both; }
+  .benefits-list li {
+    font-size: 22px;
+    margin: 2.5rem 0; } }
