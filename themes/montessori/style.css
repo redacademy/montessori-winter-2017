@@ -2374,6 +2374,9 @@ body.page-template-contact .entry-header {
   margin: 0;
   position: fixed; }
 
+.page-template-contact .entry-title {
+  padding-top: 15px; }
+
 .page-template-contact a.scroller {
   padding-top: 20px; }
 
@@ -2459,7 +2462,8 @@ p.address {
     margin-top: 15px; }
   .page-template-contact a.scroller {
     font-size: 35px;
-    margin-bottom: 0; }
+    margin-bottom: 0;
+    padding-top: 35px; }
   input.contact_name,
   input.contact_email,
   input.contact_number,

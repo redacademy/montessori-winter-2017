@@ -24,12 +24,9 @@ body.page-template-contact .entry-header {
     position: fixed;
 }
 
-// .page-template-contact .entry-title {
-//     text-transform: uppercase;
-//     margin-bottom: 0;
-
-//     margin-top: 0;
-// }
+.page-template-contact .entry-title {
+    padding-top: 15px;
+}
 
 .page-template-contact a.scroller {
     padding-top: 20px;
@@ -133,7 +130,7 @@ body.page-template-contact .entry-header {
 .page-template-contact a.scroller {
     font-size: 35px;
     margin-bottom: 0;
-
+    padding-top: 35px;
 }
 
 
