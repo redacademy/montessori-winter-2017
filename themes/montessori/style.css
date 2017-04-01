@@ -2511,7 +2511,8 @@ div.entry-header-container {
 .entry-title {
   text-transform: uppercase;
   margin-bottom: 0;
-  font-size: 25px; }
+  font-size: 25px;
+  margin-top: 0; }
 
 a.scroller {
   font-size: 20px;
