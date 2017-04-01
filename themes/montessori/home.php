@@ -28,20 +28,23 @@ get_header(); ?>
             <div class="get-container">
                 <h2>What's New</h2>
                 <section class="what-is-new">
-                    <div class="get-involved-titles">
+                    <div class="get-involved-titles" >
                         <!--<?php
                           $args = array('post_type' => 'post', 'order' => 'DSC', 'posts_per_page' => 3 );
                           $product_posts = new WP_Query($args);
                          ?>-->
                         <?php while ($product_posts->have_posts() ) : $product_posts->the_post(); ?>
                         <?php //get_template_part( 'template-parts/content'); ?>
-                        <ul class="nav-t nav-tabs">
-                            <li class="active">
-                                <h4>
-                                    <a href="#tab1">
+                        
+                        <ul class="nav-tabs"  >
+                            
+                            <li>
+                                <h4  >
+                                    		<a class="tab-link current" data-tab="tab-1">
+                                  
                                         <?php 
-                           the_title();
-                         //the_content(); ?>
+                                    the_title();
+                                        ?>
 
                                     </a>
                             </li>
@@ -52,7 +55,7 @@ get_header(); ?>
                     </div>
                     <div class="get-involved-content">
                         <?php while ($product_posts->have_posts() ) : $product_posts->the_post(); ?>
-                        <div id="tab1" class="tab-content active">
+                       	<div id="tab-1" class="tab-content current">
                             <div class="middle-school-textarea">
                                 <?php echo CFS()->get('montessori_in_the_middle_school_textarea');?>
                             </div>
@@ -71,7 +74,7 @@ get_header(); ?>
                             <?php endwhile; // End of the loop. ?>
                             <a href="#" class="express-your-interest">Express Your Interest</a>
                         </div>
-                        <div id="tab2" class="tab-content hide">
+                        <div id="tab-2" class="tab-content">
                             <?php while ($product_posts->have_posts() ) : $product_posts->the_post(); ?>
                             <div class="montessori-first-textarea">
                                 <?php echo CFS()->get('montessori_text_quote_first_textarea');?>
