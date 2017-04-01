@@ -11,8 +11,8 @@ div.entry-header-container{
 
 }
 
-.entry-header {
-    width:95%;
+body.page-template-contact .entry-header {
+    width:100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -21,20 +21,23 @@ div.entry-header-container{
     z-index: 1;
     background-color: #fff;
     margin:0;
+    position: fixed;
 }
 
-.entry-title {
-text-transform: uppercase;
-margin-bottom: 0;
-font-size: 40px;
-margin-top: 0;
+// .page-template-contact .entry-title {
+//     text-transform: uppercase;
+//     margin-bottom: 0;
+
+//     margin-top: 0;
+// }
+
+.page-template-contact a.scroller {
+    padding-top: 20px;
 }
 
-p.scroller {
-    font-size: 35px;
-    margin-bottom: 0;
-    margin-top: 5px;
-
+div.entry-content {
+    width: 95%;
+    margin: 0 auto;
 }
 
 p.in-touch {
@@ -67,7 +70,7 @@ select.contact_grade {
 }
 
 textarea.contact_message {
-    width: 70%;
+    width: 100%;
     border: 1px solid #ccc;
     border-radius: 3px;
     height: 15rem;
@@ -107,13 +110,40 @@ p.address {
 @media screen and (min-width: 1240px) {
 
 
+body.page-template-contact .entry-header {
+    margin-top: 1px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    border-bottom: 2px solid #2eb688;
+    width: 100%;
+    z-index: 3;
+}
+
+.page-template-contact .entry-title {
+    text-transform: uppercase;
+    margin-bottom: 0;
+    font-size: 40px;
+    margin-top: 15px;
+}
+
+.page-template-contact a.scroller {
+    font-size: 35px;
+    margin-bottom: 0;
+
+}
+
+
 input.contact_name,
 input.contact_email,
 input.contact_number,
 select.contact_subject,
 select.contact_schools,
 select.contact_grade {
-    width: 45%;
+    width: 70%;
 }
 
 textarea.contact_message {

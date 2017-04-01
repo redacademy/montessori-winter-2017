@@ -14,11 +14,11 @@ get_header(); ?>
             <div class= "entry-header-container"> 
                 <header class="entry-header">
                     <?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-                    <p class="scroller">Back to top</p>
+                    <a class="scroller" href="#back-top">Back to top</a>
                 </header><!-- .entry-header -->
             </div>
 
-            <div class="entry-content">
+            <div class="entry-content" id="back-top">
                 <p class="in-touch">Getting in touch is easy!</p>
                 <p class="send-message">Send us a message</p>
                 &nbsp;

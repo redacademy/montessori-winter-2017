@@ -1,34 +1,75 @@
 .page-template-what-is-montessori main.site-main {
     padding-top: 100px;
-    // width: 95%;
-    margin: 0 auto;
+
 }
 
 div.entry-header-container{
     top:-20px;
     padding-bottom: 75px;
-    width: 100%;
     background-color: #fff;
     z-index: 100;
 }
 
 .entry-header {
+    margin-top:1px;
     display: flex;
     flex-direction: row;
-    width: 100%;
     justify-content: space-between;
     border-bottom: 2px solid #2EB688;
+    width: 100%;
+    z-index: 3;
+ 
 }
 
 .entry-title {
-text-transform: uppercase;
-margin-bottom: 0;
-font-size: 40px;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    font-size: 25px;
 }
 
-p.scroller {
-    font-size: 35px;
+a.scroller {
+    font-size: 20px;
+    padding-top: 5px;
+    padding-right: 0;
+    }
+a.scroller:visited {
     margin-bottom: 0;
+    color: #000;
+    }
+
+.navigation-sub-nav{
+        padding-top: 30px;
+        position: fixed;
+        width: 100%;
+        top: 93px;
+        left: 0;
+
+    ul {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        list-style: none;
+        text-decoration: none;
+        display:flex;
+        background: #248E6A;
+    }
+    
+    a{
+        color:white;
+        border-right: solid;
+        font-size:20px;
+        flex-wrap: wrap;
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-bottom: 15px;
+        margin-top: 0px;
+
+    }    
+}
+
+div.content-container{
+    width: 95%;
+    margin: 0 auto;
 }
 
 h1.section-title,
@@ -42,7 +83,6 @@ section.montessori-info {
     padding-bottom: 5rem;
     border-bottom: 2px solid #2EB688;
 }
-
 
 .history-of-montessori:after {
         content: ' ';
@@ -139,6 +179,29 @@ margin-bottom: 0
 
 @media screen and (min-width: 1240px) {
 
+    .entry-header{
+        display: none;
+
+    }
+
+    .navigation-sub-nav{
+
+        position: fixed;
+        width: 100%;
+        top: 50px;
+        left: 0;
+        right: 0;
+        
+        ul {
+         padding-top: 10px;
+         padding-bottom: 5px;   
+        }
+        a {
+            font-size: 25px;
+            padding-top: 0;
+        }   
+}
+    
     blockquote p{
         font-size: 30px;
         border-left: solid 12px #DC3957;

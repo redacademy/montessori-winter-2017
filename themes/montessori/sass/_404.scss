@@ -1,0 +1,70 @@
+body.error404 .site-content{
+    padding-top: 150px;
+}
+
+section.content-404 {
+    display: flex;
+    flex-direction: row;
+    width: 85%;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+h1.page-title-404 {
+    font-size: 18px;
+}
+
+div.message-n-button{
+    max-width: 50%;
+}
+
+.image-404 {
+    width: 200px;
+    height: 100%;
+}
+
+.page-title-404 {
+    padding-bottom: 3rem;
+}
+
+a.home-button{
+    font-size: 22px;
+    padding: 15px;
+    background-color: #4FC8A1;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 8px;
+}
+
+a.home-button:visited{
+    color: #fff;
+}
+
+@media screen and (min-width: 860px) {
+
+
+.image-404 {
+    width: 448px;
+    height: 100%;
+}
+
+section.content-404 {
+    
+    width: 75%;
+    padding-bottom: 2rem;
+}
+
+h1.page-title-404 {
+    font-size: 32px;
+}
+
+a.home-button{
+    font-size: 32px;
+    padding: 20px;
+    background-color: #4FC8A1;
+    padding-left: 60px;
+    padding-right: 60px;
+    border-radius: 8px;
+}
+}

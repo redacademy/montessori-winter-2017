@@ -10,43 +10,13 @@
 get_header(); ?>
 
 	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
-
-			<section class="error-404 not-found">
-				<header class="page-header">
-					<h1 class="page-title"><?php echo esc_html( 'Oops! That page can&rsquo;t be found. poo poo' ); ?></h1>
-				</header><!-- .page-header -->
-
-				<div class="page-content">
-					<p><?php echo esc_html( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?' ); ?></p>
-
-					<?php get_search_form(); ?>
-
-					<?php the_widget( 'WP_Widget_Recent_Posts' ); ?>
-
-					<?php if ( red_starter_categorized_blog() ) : // Only show the widget if site has multiple categories. ?>
-					<div class="widget widget_categories">
-						<h2 class="widget-title"><?php echo esc_html( 'Most Used Categories' ); ?></h2>
-						<ul>
-						<?php
-							wp_list_categories( array(
-								'orderby'    => 'count',
-								'order'      => 'DESC',
-								'show_count' => 1,
-								'title_li'   => '',
-								'number'     => 10,
-							) );
-						?>
-						</ul>
-					</div><!-- .widget -->
-					<?php endif; ?>
-
-					<?php
-						$archive_content = '<p>' . sprintf( esc_html( 'Try looking in the monthly archives. %1$s' ), convert_smilies( ':)' ) ) . '</p>';
-						the_widget( 'WP_Widget_Archives', 'dropdown=1', "after_title=</h2>$archive_content" );
-					?>
-<p>nddjdjjd</p>
-				</div><!-- .page-content -->
+		<main id="main" class="site-main 404-not-found" role="main">
+			<section class="content-404">
+				<img class= "image-404" src="<?php bloginfo('stylesheet_directory');?>/images/history/Group 94.png" alt="Follow the Child">
+				<div class="message-n-button">
+					<h1 class="page-title-404">"Oops! Looks like that isn't related to NW Montessori Society! Click on the button below to go back to home page"</h1>
+					<a class="home-button" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">Home</a>
+				</div>
 			</section><!-- .error-404 -->
 
 		</main><!-- #main -->

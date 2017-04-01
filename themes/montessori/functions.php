@@ -122,3 +122,16 @@ function sub_menu($menu){
     echo "</ul>";
 echo '</div>';
 }
+
+function sub_nav($menu){
+ echo '<div class="navigation-sub-nav">';
+    echo '<ul>';
+	 echo '<div class="back">';
+        echo '<li><a href="#back-top">Back to top</a></li>';
+     echo "</div>";
+		foreach($menu as $menu_item){
+			echo "<li><a href='#{$menu_item[0]}'>{$menu_item[1]}</a></li>";
+		}              
+    echo "</ul>";
+echo '</div>';
+}
